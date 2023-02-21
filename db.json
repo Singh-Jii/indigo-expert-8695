@@ -76,6 +76,7 @@
             "price": "200.00",
             "Brand": "AG Jeans",
             "color": "BLACK",
+            "size":[26,23],
             "Color_image":"https://images.urbndata.com/is/image/Anthropologie/4123650590242_001_s?fit=constrain&hei=56&qlt=75",
             "details": ["Linen", "viscose", "elastaneFront and back patch pockets",
               "Zip front",
@@ -99,6 +100,7 @@
      " Machine wash",
     "  Imported"],
     "rating": "4.2",
+      "size":[24,23],
     "Brand_details":"Our exclusive Pilcro label offers effortless style and endless possibilities for everyday outfitting. From top to bottom, each piece is both versatile and comfy - just how all your favorites should be! Delivering iconic silhouettes crafted from premium denim - along with boho blouses, breezy buttondowns, and beyond - this only-at-Anthro collection is designed to fit, flatter, and feel amazing."
 },{
   "id": 3,
@@ -115,6 +117,7 @@
      " Machine wash",
     "  Imported"],
     "rating": "4.1",
+    "size":[24,23,25],
     "Brand_details":"Founded in 2012 by Swedish designers Erik Torstensson and Jens Grede, their goal was simple: to create jeans that were unmatched in fit and quality. Since then, the sustainably-minded Los Angeles-based brand has added must-have cotton, leather, and cashmere to their collections, focusing on one-of-a-kind details and lived-in ease."
 },{
   "id": 4,
@@ -131,6 +134,7 @@
      " Machine wash",
     "  Imported"],
     "rating": "4.1",
+    "size":[24,23,25],
     "Brand_details":"Our exclusive Pilcro label offers effortless style and endless possibilities for everyday outfitting. From top to bottom, each piece is both versatile and comfy - just how all your favorites should be! Delivering iconic silhouettes crafted from premium denim - along with boho blouses, breezy buttondowns, and beyond - this only-at-Anthro collection is designed to fit, flatter, and feel amazing."
 },{
   "id": 5,
@@ -147,6 +151,7 @@
      " Machine wash",
     "  Imported"],
     "rating": "4.1",
+    "size":[24,23,25,26],
     "Brand_details":"The name Maeve references a purple flower, a Greek goddess, and a famously beautiful Irish warrior queen. In light of these inspirations, it's no surprise that their collection is structured yet delicate, a representation of beauty and strength at once. Each Maeve design is refined, flattering, and - best of all - exclusively ours."
 },{
   "id": 6,
@@ -162,6 +167,7 @@
     "details": ["92% cotton", "5% lyocell", "Pull-on styling","Front and back patch pockets",
      " Machine wash",
     "  Imported"],
+    "size":[24,23,25,26],
     "rating": "4.1",
     "Brand_details":"As the only female founder in the American denim industry, Paige Adams-Geller has been breaking boundaries since she launched her line in 2004. Anyone who's ever worn her jeans won't be surprised to learn that she first entered the fashion world as a fit model - each pair is flawlessly tailored and wear-tested for an optimally comfortable, flattering fit."
 },{
@@ -178,6 +184,7 @@
     "details": ["92% cotton", "5% lyocell", "Pull-on styling","Front and back patch pockets",
      " Machine wash",
     "  Imported"],
+    "size":[24,23,25,26],
     "rating": "4.1",
     "Brand_details":"Our exclusive Pilcro label offers effortless style and endless possibilities for everyday outfitting. From top to bottom, each piece is both versatile and comfy - just how all your favorites should be! Delivering iconic silhouettes crafted from premium denim - along with boho blouses, breezy buttondowns, and beyond - this only-at-Anthro collection is designed to fit, flatter, and feel amazing."
 },{
@@ -195,6 +202,7 @@
      " Machine wash",
     "  Imported"],
     "rating": "3.9",
+    "size":[24,23,25,26],
     "Brand_details":"Our exclusive Pilcro label offers effortless style and endless possibilities for everyday outfitting. From top to bottom, each piece is both versatile and comfy - just how all your favorites should be! Delivering iconic silhouettes crafted from premium denim - along with boho blouses, breezy buttondowns, and beyond - this only-at-Anthro collection is designed to fit, flatter, and feel amazing."
 },{
   "id": 9,
@@ -211,6 +219,7 @@
      " Machine wash",
     "  Imported"],
     "rating": "3.9",
+    "size":[24,23,25,26],
     "Brand_details":"Founded in 2012 by Swedish designers Erik Torstensson and Jens Grede, their goal was simple: to create jeans that were unmatched in fit and quality. Since then, the sustainably-minded Los Angeles-based brand has added must-have cotton, leather, and cashmere to their collections, focusing on one-of-a-kind details and lived-in ease."
 },{
   "id": 10,
@@ -227,6 +236,7 @@
      " Machine wash",
     "  Imported"],
     "rating": "3.9",
+    "size":[24,23,25,26],
     "Brand_details":"The name Maeve references a purple flower, a Greek goddess, and a famously beautiful Irish warrior queen. In light of these inspirations, it's no surprise that their collection is structured yet delicate, a representation of beauty and strength at once. Each Maeve design is refined, flattering, and - best of all - exclusively ours."
 },{
   "id": 11,
@@ -243,6 +253,7 @@
      " Machine wash",
     "  Imported"],
     "rating": "3.9",
+    "size":[24,23,25,26],
     "Brand_details":"As the only female founder in the American denim industry, Paige Adams-Geller has been breaking boundaries since she launched her line in 2004. Anyone who's ever worn her jeans won't be surprised to learn that she first entered the fashion world as a fit model - each pair is flawlessly tailored and wear-tested for an optimally comfortable, flattering fit."
 },{
   "id": 12,
@@ -259,6 +270,7 @@
      " Machine wash",
     "  Imported"],
     "rating": "3.9",
+    "size":[24,23,25,26],
     "Brand_details":"Our exclusive Pilcro label offers effortless style and endless possibilities for everyday outfitting. From top to bottom, each piece is both versatile and comfy - just how all your favorites should be! Delivering iconic silhouettes crafted from premium denim - along with boho blouses, breezy buttondowns, and beyond - this only-at-Anthro collection is designed to fit, flatter, and feel amazing."
 },{
   "id": 13,
@@ -275,6 +287,7 @@
      " Machine wash",
     "  Imported"],
     "rating": "3.9",
+    "size":[24,23,25,26],
     "Brand_details":"As the only female founder in the American denim industry, Paige Adams-Geller has been breaking boundaries since she launched her line in 2004. Anyone who's ever worn her jeans won't be surprised to learn that she first entered the fashion world as a fit model - each pair is flawlessly tailored and wear-tested for an optimally comfortable, flattering fit."
 },{
   "id": 14,
@@ -291,6 +304,7 @@
      " Machine wash",
     "  Imported"],
     "rating": "3.9",
+    "size":[24,23,25,26],
     "Brand_details":"As the only female founder in the American denim industry, Paige Adams-Geller has been breaking boundaries since she launched her line in 2004. Anyone who's ever worn her jeans won't be surprised to learn that she first entered the fashion world as a fit model - each pair is flawlessly tailored and wear-tested for an optimally comfortable, flattering fit."
 },{
   "id": 15,
@@ -307,6 +321,7 @@
      " Machine wash",
     "  Imported"],
     "rating": "3.9",
+    "size":[24,23,25,26],
     "Brand_details":"As the only female founder in the American denim industry, Paige Adams-Geller has been breaking boundaries since she launched her line in 2004. Anyone who's ever worn her jeans won't be surprised to learn that she first entered the fashion world as a fit model - each pair is flawlessly tailored and wear-tested for an optimally comfortable, flattering fit."
 },{
   "id": 16,
@@ -323,10 +338,11 @@
      " Machine wash",
     "  Imported"],
     "rating": "3.9",
+    "size":[24,23,25,26],
     "Brand_details":"As the only female founder in the American denim industry, Paige Adams-Geller has been breaking boundaries since she launched her line in 2004. Anyone who's ever worn her jeans won't be surprised to learn that she first entered the fashion world as a fit model - each pair is flawlessly tailored and wear-tested for an optimally comfortable, flattering fit."
 }
   ],
   "Orders":[
-    
+
   ]
 }
