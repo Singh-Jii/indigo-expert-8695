@@ -1,0 +1,16 @@
+i{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    margin-left: 350px;
+    margin-right: 110px;
+}
+.stick{
+    display: flex;
+    background-color: rgb(185, 147, 8);
+    color: white;
+}
+a{
+    color: white;
+    margin-top: 15px;
+    margin-left: 100px;
+}
