@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOTHING</title>
+    <a href="clothing.html"></a>
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/backgroud.css">
+
+    <script src="https://kit.fontawesome.com/38439e7720.js" crossorigin="anonymous"></script>
+    <style>
+        #upper{
+            border: 1px solid blue;
+        }
+
+        #browseBy{
+            border: 3px solid rgb(227, 27, 60);
+        }
+
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family:  Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+        #upper>div>h2:hover{
+            cursor: pointer;
+            color: rgb(66, 153, 253);
+
+        }
+        #sortBox>div{
+            position:relative;
+        }
+       #upper>div>div{
+        position: relative;
+       }
+        #complete{
+            border: 1px solid red;
+            width:90%;
+            margin: auto;
+            margin-top: 10px;
+            /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+            z-index: -1;
+        }
+        #top{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        #top>div{
+            border:1px solid green;
+            width:15%;
+            height:60px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           font-size: 14px;
+           font-weight: 10px;
+           box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+
+
+        #sortBox{
+            border: 3px solid green;
+            /* margin-left: 300px; */
+            margin-top: 20px;
+            display: flex;
+    
+        }
+        #sortBox>div:nth-child(1){
+            border: 2px solid blue;
+            display: flex;
+            width:400px;
+            /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+        
+        }
+        #sortBox>div:nth-child(1)>p{
+            margin-top: 13px;
+            margin-left: 13px;
+            color:#555 ;
+            margin-right: 40px;
+
+        }
+        #sortBox>div:last-child{
+            display: flex;
+            border: 2px solid green;
+            width:200px;
+            margin-left: 200px;
+            margin-top: 12px;
+        }
+        #sort{
+            /* margin-left: 20px; */
+            width:60%;
+            font-size: 15px;
+            color: rgb(92,92,95);
+            padding: 5px;
+        }
+        #sortBox>div:last-child>p{
+            color:black;
+            margin-top: 7px;
+            margin-right: 2px;
+        }
+
+        /* card div starts */
+
+        #cardDiv{
+            border: 3px solid violet;
+            /* margin-left: 300px; */
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 15px;
+        }
+        /* #images>div{
+            border:1px solid red;
+        } */
+        #cardDiv>div {
+            overflow: hidden;
+            height: 405px;
+        }
+        #cardDiv>div>img{
+            width:100%;
+            height:300px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            transition-duration: 2s;
+        }
+        #images>div>p{
+            margin-top: 10px;
+        }
+        #images>div>p+p{
+            color:#555;
+            margin-top: 5px;
+            font-size: 15px;
+        
+        }
+        #images>div:hover img{
+            transform: scale(1.1);
+        }
+        img+p{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #top>div:nth-child(1){
+            background-color:rgb(20,104,71) ;
+            color:white;
+        }
+        #top>div:nth-child(2){
+            background-color: rgb(69,157,147);
+            color:white;
+        }
+        #top>div:nth-child(3){
+            background-color: rgb(102,135,167);
+            color:white;
+        }
+        #top>div:nth-child(4){
+            background-color:#4f9589;
+            color:white;
+        }
+        #top>div:nth-child(5){
+            background-color:#5d8b52;
+            color:white;
+        }
+        #top>div:nth-child(6){
+            background-color: #6799aa;
+            color:white;
+        }
+        h1{
+        font-family: Arial, Helvetica, sans-serif;
+         font-size: 20px;
+         font-weight: 2px;
+         margin-top: 7px;
+        }
+        #box{
+            border: 3px solid gold;
+            margin-left: 0px;
+            width:1400px
+            
+        }
+
+        /* #cardDiv{
+            border: 3px solid teal;
+        } */
+
+
+        #upper{
+            /* border:1px solid red; */
+            display: flex;
+            margin-top: 10px;
+            /* position: relative; */
+        }
+        #cardDiv>div{
+            position: relative;
+            height: 410px;
+        }
+        #upper>div:first-child{
+            /* border: 1px solid green; */
+            
+            width:250px;
+            height: 600px;
+            display: block;
+            margin-top: 29px;
+            margin-right: 40px;
+        }
+        #complete a{
+            margin-top: 20px;
+            text-decoration: none;
+            display: block;
+            color:#555
+        }
+        #complete a:hover{
+            text-decoration: underline;
+        }
+        #shoes>div:nth-child(2){
+            /* border: 1px solid red; */
+            width:300px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        #cloth{
+            margin-top: 0px;
+            width:50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 10px 0 5px;
+            padding-bottom: 20px;
+        }
+        #sec1{
+         margin-top: 20px;
+         border: 1px solid red;
+         width:100px;
+         padding-right: 20px;
+         
+        }
+        #complete a+h3{
+            margin-top: 20px;
+            
+        }
+        #upper>div:first-child>h2{
+            margin-top: 20px;
+        }
+        #price~h2{
+            font-weight: normal;
+            font-size: 20px;
+        }
+        #price{
+            font-weight: normal;
+            font-size: 20px;
+        }
+        #btn-btn{
+            margin-left: 100px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+        }
+        #cardDiv>div>p>button{
+            height:20px;
+            width:20px;
+            border-radius: 50%;
+            margin-right: 5px;
+           }
+           .coloursForPic{
+            position: absolute;
+            bottom: 0px;
+            
+           }
+           .coloursForPic>button{
+            border:0.5px solid #555;
+           }
+        @media all and (min-width:784px) and (max-width:1074px){
+        #cardDiv{
+            grid-template-columns: repeat(3,1fr);
+            /* width:100%; */
+            gap:10px;
+        }
+       
+       
+        #box{
+            width:100%;
+        }
+        #shoes>div:nth-child(1)>p{
+            margin-left: 4px;
+        }
+        #upper{
+            width:100%;
+        }
+
+    }
+    @media all and (min-width:200px) and (max-width:783px){
+        #cardDiv{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(10,420px);
+            /* width:100%; */
+            gap:10px;
+        }
+        
+        /* #complete{
+            width: 400px;
+            height: 380px;
+        } */
+        #box{
+            width:100%;
+        }
+        #shoes>div:nth-child(1)>p{
+            margin-left: 4px;
+        }
+        #upper>div:first-child{
+            display: none;
+        }
+        /* #upper>div:first-child>h2{
+           margin-top: 0px;
+           height: 0px;
+           display: none;
+        } */
+        #upper{
+            width:100%;
+        }
+    
+    }
+
+    /* #cardDiv{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+      } */
+    
+    
+    
+    </style>
+</head>
+<body>
+
+
+  <!-- main -->
+
+
+    <div id="complete">
+      
+    <div id="upper">
+        <div id ="browseBy">
+            <h3>Browse by:</h3>
+            <hr>
+            <a href="index.html">Home</a>
+            <a href="shoes.html">shoes</a>
+            <a href="beauty1.html">Beauty & Wellness</a>
+            <a href="">Homes and furniture</a>
+            <a href="">Weddings</a>
+            <a href="sale.html">Sale</a>
+            <a href="">Garden & outdoor</a>
+            <h3>Filter by:</h3>
+            <hr>
+            <h2 id="price">Price +</h2>
+            <hr>
+            <h2 id="size">Size +</h2>
+            <hr>
+            <h2>Color +</h2>
+            <hr>
+            <h2>Brand +</h2>
+            <hr>
+            <h2>Free pickup +</h2>
+            <hr>
+        </div>
+    <div id="box">
+        <div id="sortBox">
+            <div>
+                <h1>Women's Clothing</h1>
+                <p>products</p>
+            </div>
+            <div>
+                <p>Sort:</p>
+                <select name="" id="sort">
+                    <option value="">Featured</option>
+                    <option value="lowhigh">Price:Low to High</option>
+                    <option value="highlow">Price:High to Low</option>
+                    <option value="Newest">Newest</option>
+                    <option value="Bestselling">Bestselling</option>
+                
+                    <option value="az">A-Z</option>
+                    <option value="za">Z-A</option>
+                </select>
+                <!-- <button class="btn-btn"><a class="cloth"href=""><</a></button> -->
+                <button id="btn-btn"><a id="cloth" href="shoes.html">2</a></button>
+            </div>
+        </div>
+        <div id="cardDiv">
+         
+        </div>
+    </div>
+    </div>
+    </div>
+    
+</body>
+</html>
+<script>
+
+
+let container = document.getElementById("cardDiv")
+   
+const url = `https://fashionhub-mrc2.onrender.com/AllProducts`
+
+fetch(url)
+.then((res)=>{
+ return res.json()
+})
+.then((actualData)=>{
+    console.log(actualData)
+    displayData(actualData)
+    
+})
+
+.catch((error)=>{
+      console.log(error)
+    })
+
+
+    function displayData(data){
+      container.innerHTML=null;
+     data.forEach((element)=>{
+
+      
+
+      let card = document.createElement("div");
+       
+      let image =document.createElement("img")
+      image.setAttribute("src",element.image_1);
+
+    //   let colorImg = document.createElement("img");
+    //   colorImg.setAttribute("src",element.Color_image);
+
+      let brand = document.createElement("p");
+      brand.innerText= element.Brand;
+
+    //   let category = document.createElement("p");
+    //   category.innerText=element.category;
+
+      let price = document.createElement("p");
+      price.innerText=element.price;
+
+      let button = document.createElement("button");
+      button.innerText= "Add To Cart"
+
+      button.addEventListener("click",()=>{
+        let cartData = JSON.parse(localStorage.getItem("cart")) || [];
+        let isPresent =false;
+        console.log(cartData)
+        for (let i =0; i<cartData.length; i++){
+          if (cartData[i].id===element.id){
+            isPresent=true;
+            break;
+          }
+        //   console.log(cartData[i].id)
+        //   console.log(element.id)
+        }
+        
+        // console.log(isPresent)
+
+        if (isPresent===true){
+          alert("Product already in the cart");
+        }else{
+          cartData.push(element);
+          localStorage.setItem("cart",JSON.stringify(cartData));
+          alert("Product added to The cart");
+        }
+      })
+
+      card.append(image, brand,price,button);
+      container.append(card)
+
+
+
+     })
+    }
+
+
+
+
+
+ 
+</script>
+
