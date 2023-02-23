@@ -8,34 +8,24 @@
     <link rel="stylesheet" href="./signin.css">
 </head>
 <body>
+    
     <button id="open-popup-btn">Log In</button>
     <div class="popup-overlay"></div>
     <div class="popup">
-        <div class="form">
-            <h2>Log In</h2>
-            <div class="form-element">
-                <label for="email">Email</label>
-                <input type="text" id="email" placeholder="Enter Email">
-            </div>
-            <div class="form-element">
-                <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Enter Password">
-            </div>
-            <div class="form-element">
-                <input type="checkbox" id="check">
-                 <label for="password">Remember Me</label>
-            </div>
-            <div class="form-element">
-                <button>Sign In</button>
-            </div>
-            <div class="form-element">
-                <a href="#">Forget Password</a>
-                
-            </div><a href="./signup.html">Register Here</a>
-         <div class="popup-close-btn">&times;</div>
+       <div class="logoset"><img src="./logo.png" alt=""></div>
+      <div id="signin">
+      <h3 id="heading">Email Id and Password</h3>
+      <form>
+        <div class="form-element"> <label for="email">Email</label><input type="text" id="email" placeholder="Enter Email"> </div>
+        <div class="form-element"><label for="password">Password</label> <input type="password" id="password" placeholder="Enter Password"></div>
+        <div class="form-element"><input type="checkbox" id="check"><label for="password">Remember Me</label></div>
+        <div class="form-element"><button>Sign In</button></div>
+        <div class="form-element"><a href="./signup.html">Register Here?</a></div> 
+      </form>       
     </div>
-    
-          
+    <div class="popup-close-btn">&times;</div>
+    </div>
+       
 </body>
 <script>
     var openbtn=document.querySelector("#open-popup-btn");
@@ -47,7 +37,30 @@
     closebtn.addEventListener("click",function(){
         document.body.classList.remove("popup-active")
     });
+    let email=document.getElementById("email")
+        let mobile=document.getElementById("mobile")
+        let password=document.getElementById("password");
 
+        let storeddata=JSON.parse(localStorage.getItem("account-data"))
+        document.querySelector("form").addEventListener("submit",(e)=>{
+          e.preventDefault();
+          display(storeddata);
+          function display(data){
+           data.forEach((e,i)=>{
+            if(email.value===e.Email  && password.value ===e.Password){
+              document.getElementById("heading").innerText="Sign in Successful";
+              alert("Login Sucessfull")
+              window.location.href="./afterloginn.html"
+            }
+            else{
+              document.getElementById("heading").innerText="Wrong Credentials";
+              alert("Wrong Credentials")
+
+            }
+           })
+          }
+
+        })
 
 </script>
 

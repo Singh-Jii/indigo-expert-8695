@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign up Page</title>
+  <link rel="icon" type="image/png" href="./mainlogo.png">
+  <link rel="stylesheet" href="./signup.css">
+  <script src="https://kit.fontawesome.com/4052196a9f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="set">
+  <div class="nav">
+    
+  </div>
+  <div id="signup">
+    <div class="logoset"><img src="./logo.png" alt=""></div>
+    <h2>Register</h2>
+
+    <form>
+      <input type="text" id="name" placeholder="Full Name"><br>
+      <input type="number"id="mobile" placeholder="Mobile No."><br>
+      <input type="email" id="email" placeholder="Emaid ID"><br>
+      <input type="password" id="password" placeholder="Password"><br>
+      <p>Password must be at least 8 characters long with 1 Uppercase, 1 Lowercase & 1 Numeric character.</p>
+      <input type="submit" value="Submit"  class="submit"/>
+    </form>
+  </div>
+  <div class="back">
+     <a href="./index.html"><i class="fa-solid fa-house"></i></a>
+     <a href="./signin.html"><i class="fa-solid fa-circle-chevron-left"></i></a>
+    </div>
+</div>
+</body>
+<script>
+  let name = document.getElementById("name");
+  let phone=document.getElementById("mobile")
+  let email = document.getElementById("email");
+  let password = document.getElementById("password");
+  let personData = [];
+  document.querySelector("form").addEventListener("submit", (e) => {
+    e.preventDefault();
+    let obj = {
+      name: name.value,
+      email: email.value,
+      Password: password.value,
+      MobileNo:phone.value
+    }
+    personData.push(obj);
+    // alert("Submit Sucessfull")
+    // window.location.href="./signin.html"
+
+    localStorage.setItem("account-data", JSON.stringify(personData));
+    fetch ("https://fashionhub-mrc2.onrender.com/users",{
+    
+      method:"POST",
+     headers: {
+      'Content-Type': 'application/json'
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body: JSON.stringify(obj) 
+    }).then((res)=>res.json().then((data)=>console.log(data)))
+  })
+</script>
+
+</html>
+
+
+
