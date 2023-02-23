@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Pannel</title>
+    <link rel="stylesheet" href="./styles/order.css">
+</head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<body>
+
+    <div class="mainContainer">
+        <div class="navigator">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="">
+                </div>
+                <div class="links">
+                    <a href="./Admin_Home.html">Dashboard</a>
+                    <a href="./Admin_Product.html">All Product</a>
+                    <a href="./Admin_newProd.html">New Product</a>
+                    <a href="./User_Admin.html">Users</a>
+                    <a href="./order.html">Order</a>
+                    <a id="logout">Logout</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="month_Chart">
+            <h1 class="admin">Admin Pannel</h1>
+            <h2 class="heading">Monthly Pie Chart</h2> -->
+
+            <!-- <div id="myChart"></div> -->
+
+         <div id="table">
+                <table id="table_Tr">
+                    <tr >
+                      <th>Order-ID</th>
+                      <th>USER ID</th>
+                      <th>NAME</th>
+                      <th>EMAIL</th>
+                      <th>Mobile</th>
+                      <th>PP</th>
+                      <th>Address</th>
+                      <th>Date</th>
+                      <th>Zip</th>
+                      
+                    </tr>
+                    
+                   <tbody id="table_details">
+                   
+                   </tbody>
+                  
+                  </table>
+                </div>
+
+
+            
+        </div>
+        <span class="notification" id="out"> ✅ Logout success</span>
+</body>
+<script src="./scripts/order.js"></script>
+
+</html>
