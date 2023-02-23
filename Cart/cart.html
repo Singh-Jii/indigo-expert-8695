@@ -10,14 +10,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="product.html">
+    <link rel="icon" type="image/png" href="./mainlogo.png">
+
 </head>
 <style>
+    body{
+        color : gray
+    }
     #MainCart{
         display: flex;
+        /* grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,1fr); */
         width: 90%;
         margin: auto;
-        
+       
+        /* border: 1px solid red; */
 
     }
     #Mian-1{
@@ -28,7 +36,8 @@
         /* border :1px solid red; */
         align-items: center;
         margin-right: 20px;
-       
+        /* border: 1px solid red; */
+        height: 50px;
     }
    
     #Mian-2{
@@ -40,11 +49,13 @@
         /* border :1px solid red; */
         gap: 5%;
         align-items: center;
+        height: 50px;
     }
     #Mian-3{
         display: grid;
         grid-template-columns: repeat(4,1fr);
         width: 69%;
+        margin-left: 2%;
         justify-content: space-evenly;
         /* border :1px solid red; */
         align-items: center;
@@ -55,6 +66,8 @@
         width: 60%;
         border: 1px solid gray;
         margin-bottom: 5%;
+        margin-left: 2%;
+        padding-left: 2%;
     }
     .container2{
         width: 60%;
@@ -63,7 +76,7 @@
     .container2 div{
     /* background-color: black; */
     width: 100%;
-    /* margin: auto; */
+    margin: auto;
     /* background-color: #FBE9E7; */
     /* background-color: pink; */
     /* border: 1px solid red; */
@@ -72,7 +85,7 @@
    .container2 button{
     background-color: rgb(5, 5, 5);
     border: 10px;
-    padding: 5%;
+    padding: 3%;
     size: 100px;
     /* margin-right: 2%; */
    }
@@ -87,6 +100,46 @@
     margin-left: 10px;
     margin: auto;
    }
+   #Cart-Total{
+    width: 300px;
+    border: 1px solid gray;
+    padding: 8%;
+    
+   }
+   #Procedbtn a{
+    display: block;
+    color: aliceblue;
+    padding: 3%;
+    border: 1px solid gray;
+    background-color: #455A64;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+   }
+   #Procedbtn a:hover{
+    background-color: white;
+    color: #455A64;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+   #Paythmbtn1{
+    padding: 3%;
+    border: 1px solid gray;
+    color: white;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+   }
+   #Span{
+    margin-left: 300px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+   }
+   #padd{
+    padding-top: 3%;
+   }
+   #gift{
+    margin-left: 2%;
+   }
 </style>
 <body>
     <div id="MainCart">
@@ -98,13 +151,21 @@
         <div id="Mian-2">
             <div><h4>Order Summary</h4></div>
             <div><a href="">800.309.2500</a></div>
+            <div>
+               <div id="Cart-Total">
+                    <p>Subtotal  <span id="Span">0</span></p>
+                    <p>Shipping <span id="Span">0</span></p>
+                    <p>Estimated Tax  <span id="Span">0</span></p>
+                    <p>Total  <span id="Span">0</span></p>
+                    <p>Or 4 interest-free installments of $24.50 with</p>
+                    <p>Klarna orAfterpay </p>
+                    <p id="Procedbtn"><a href="shipping.html" style="text-decoration: none;" >PROCEED TO CHECKOUT</a></p>
+                    <p id="Paythmbtn1"><a href="payment.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Paytm_Logo_%28standalone%29.svg/2560px-Paytm_Logo_%28standalone%29.svg.png" width="40%" alt=""></a></p>
+               </div>
+            </div>
         </div>
-        <div>
-            djbashkhjlasdjlhkhbknb
-        </div>
-         
-
     </div>
+    
     <div id="Mian-3">
         <div><h4>Item</h4></div>
         <div><h4>Item Price</h4></div>
@@ -113,17 +174,24 @@
     </div>
     <div id="Cart-items">
         <!-- fetched items here -->
-        sjadkhkjhdka.sldkasnhdkjalsnlk
-
+      
+  
+       
     </div>
 
+    <div id="gift"><img width="20px" src="data:image/svg+xml,%3csvg class='i-giftwrap' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3e%3cpath d='M16.85 1.15v15.7H1.15V1.15h15.7m.9-.9H.25v17.5h17.5V.25Z' style='fill:%23167a92'/%3e%3cpath d='M9 .571v16.858M.571 9h16.858m-3.835 2.678a6.716 6.716 0 0 1-4.292-2.681m-4.896 2.681a6.716 6.716 0 0 0 4.292-2.681m.302 0c-1.218-.127-2.98-.293-3.69-1.262A1.34 1.34 0 0 1 6.247 5.6a1.71 1.71 0 0 1 1.054.315 3.045 3.045 0 0 1 .803.955A8.842 8.842 0 0 1 9 8.997Zm0 0c1.218-.127 2.98-.293 3.69-1.262a1.34 1.34 0 0 0-.936-2.134 1.71 1.71 0 0 0-1.054.315 3.045 3.045 0 0 0-.803.955A8.842 8.842 0 0 0 9 8.997Z' style='fill:none;stroke:%23167a92;stroke-width:.9px'/%3e%3c/svg%3e" alt=""><a href=""></a> Add Gift Wrap</div>
+    
+     
+
+    
     <div>
         <div><h2>Saved for Later</h2></div>
         <div id="box"><p>Your saved for later is currently empty. Add items here that you like, but aren't ready to buy.</p></div>
     </div>
+    
 
     <div>
-        <div><h2>You May Also Like</h2></div> 
+        <div id="padd"><h2>You May Also Like</h2></div> 
     </div>
 
  <div class="container2">
@@ -132,28 +200,28 @@
             <h4>The Bennet Buttondown Shirt</h4></a>
             <a href=""> <img src="https://images.urbndata.com/is/image/Anthropologie/4110084320184_010_b?$an-category$&qlt=80&fit=constrain" alt="">
                 <h4>Maeve Printed Buttondown Shirt</h4></a>
-        <a><img src="https://images.urbndata.com/is/image/Anthropologie/4110687810002_001_c2?$an-category$&qlt=80&fit=constrain" alt="">
+        <a  href=""><img src="https://images.urbndata.com/is/image/Anthropologie/4110687810002_001_c2?$an-category$&qlt=80&fit=constrain" alt="">
             <h4>Maeve Maxi Tunic Buttondown</h4>
         </a>
-        <a><img src="https://images.urbndata.com/is/image/Anthropologie/4110652010025_069_b2?$an-category$&qlt=80&fit=constrain" alt="">
+        <a  href=""><img src="https://images.urbndata.com/is/image/Anthropologie/4110652010025_069_b2?$an-category$&qlt=80&fit=constrain" alt="">
             <h4>By Anthropologie Relaxed Buttondown</h4>
         </a>
-        <a><img src="https://images.urbndata.com/is/image/Anthropologie/4110907290003_059_b2?$an-category$&qlt=80&fit=constrain" alt="">
+        <a  href=""><img src="https://images.urbndata.com/is/image/Anthropologie/4110907290003_059_b2?$an-category$&qlt=80&fit=constrain" alt="">
             <h4>Maeve Cropped Buttondown Shirt</h4>
         </a>
-        <a><img src="https://images.urbndata.com/is/image/Anthropologie/4110370060060_001_b2?$an-category$&qlt=80&fit=constrain" alt="">
+        <a  href=""><img src="https://images.urbndata.com/is/image/Anthropologie/4110370060060_001_b2?$an-category$&qlt=80&fit=constrain" alt="">
             <h4>Maeve Cropped Buttondown Shirt</h4>
         </a>
-        <a><img src="https://images.urbndata.com/is/image/Anthropologie/4110916210200_092_b2?$an-category$&qlt=80&fit=constrain" alt="">
+        <a  href=""><img src="https://images.urbndata.com/is/image/Anthropologie/4110916210200_092_b2?$an-category$&qlt=80&fit=constrain" alt="">
             <h4>Maeve Cropped Buttondown Shirt</h4>
         </a>
-        <a><img src="https://images.urbndata.com/is/image/Anthropologie/4110259830528_089_b2?$an-category$&qlt=80&fit=constrain" alt="">
+        <a  href=""><img src="https://images.urbndata.com/is/image/Anthropologie/4110259830528_089_b2?$an-category$&qlt=80&fit=constrain" alt="">
             <h4>Cloth & Stone Printed Buttondown Shirt</h4>
         </a>
-        <a><img src="https://images.urbndata.com/is/image/Anthropologie/4110572540050_036_b2?$an-category$&qlt=80&fit=constrain" alt="">
+        <a  href=""><img src="https://images.urbndata.com/is/image/Anthropologie/4110572540050_036_b2?$an-category$&qlt=80&fit=constrain" alt="">
             <h4>Cloth & Stone Printed Buttondown Shirt</h4>
         </a>
-        <a><img src="https://images.urbndata.com/is/image/Anthropologie/4110916210171_079_b?$an-category$&qlt=80&fit=constrain" alt="">
+        <a  href=""><img src="https://images.urbndata.com/is/image/Anthropologie/4110916210171_079_b?$an-category$&qlt=80&fit=constrain" alt="">
             <h4>Cloth & Stone Printed Buttondown Shirt</h4>
         </a>    
     </div>
@@ -177,7 +245,7 @@
     <script type="text/javascript">
       $('.slider2').slick({
   slidesToShow: 4,
-  slidesToScroll: 1
+  slidesToScroll: 4
 });
 
 var filtered = false;
@@ -195,5 +263,44 @@ $('.js-filter').on('click', function(){
 });
     </script>      
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+     
+</script>
+
 </html>
+<script>
+    let cartcontainer=document.getElementById("Cart-items")
+   
+   let cartData = JSON.parse(localStorage.getItem("cart")) || [];
+
+   console.log(cartData)
+ renderData(cartData)
+ 
+ function renderData(user){
+  console.log(user)
+  cartcontainer.innerHTML=null
+  user.forEach((element) => {
+      
+      let card=document.createElement("div")
+      let image=document.createElement("img")
+      image.setAttribute("src", element.image_1)
+      let brand = document.createElement("p");
+      brand.innerText= element.Brand;
+      let price = document.createElement("p");
+      price.innerText="$"+element.price;
+      let Quantity=document.createElement("p")
+      Quantity.innerText="Quantity"
+      let Remove=document.createElement("button")
+      Remove.innerHTML="Remove"
+
+
+      card.append(image,brand,price,Quantity,Remove)
+
+      cartcontainer.append(card)
+
+      
+  });
+
+ }
+</script>

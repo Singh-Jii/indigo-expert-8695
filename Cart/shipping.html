@@ -6,6 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    body{
+       background: rgb(218, 214, 233);
+    }
+    .Details{
+        padding: 1%;
+    }
+    *{padding:0; margin:0; box-sizing: border-box; font-family:sans-serif;}   
+header{
+	width: 100vw;
+	min-height: 100vh;
+	background: #dfe3e7;
+	font-size: 1.2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container{
+	background: rgb(244, 244, 248);
+	max-width: 800px;
+	min-height: 500px;
+	display: flex;
+	justify-content:space-between;
+	align-items: flex-start;
+	padding: 0.5rem 1.5rem;
+}
+.left{
+	flex-basis: 50%;
+}
+.right{
+	flex-basis: 50%;
+}
+form{
+	padding: 1rem;
+}
+
+h3{
+	margin-top: 1rem;
+	color:#2c3e50;
+	}
+
+form input[type="text"]{
+	width: 100%;
+	padding: 0.5rem 0.7rem;
+	margin: 0.5rem 0;
+	outline: none;
+}
+
+#zip{
+	display: flex;
+	margin-top: 0.5rem;
+}
+#zip select{
+	padding: 0.5rem 0.7rem;
+}
+#zip input[type="number"]{
+	padding: 0.5rem 0.7rem;
+	margin-left: 5px;	
+}
+input[type="submit"]{
+	width: 100%;
+	padding: 0.7rem 1.5rem;
+	background: #34495e;
+	color: white;
+	border: none;
+	outline: none;
+	margin-top: 1rem;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover{
+	background: #2c3e50;
+}
+
+
+@media only screen and (max-width: 770px){
+	.container{
+		flex-direction: column;
+	}
+	body{
+		overflow-x: hidden;
+	}
+}
+    
+</style>
 <body>
     <div class="Details">
         <h2>
@@ -20,7 +105,7 @@
             >
             /
             <a
-                href=""
+                href="payment.html"
                 style="
                     text-decoration: none;
 
@@ -37,6 +122,61 @@
                >Review</a>
         </h2>
     </div>
+
+    <div class="container">
+		<div class="left">
+			<h3>BILLING ADDRESS</h3>
+			<form>
+				First Name*
+				<input type="text" name="" placeholder="First Name">
+				Last Name*
+				<input type="text" name="" placeholder="Last Name">
+
+				Street Address*
+				<input type="text" name="" placeholder="Enter address">
+
+                Mobile Number*
+                <input type="text" name="" maxlength="12" placeholder="+91">
+
+                <!-- Mobile Number*
+                <input type="number" name="" maxlength="12" placeholder="+91"> -->
+				
+				City*
+				<input type="text" name="" placeholder="Enter City">
+				<div id="zip">
+					<label>
+						State
+						<select>
+                            <option>Choose State..</option>
+                            <option>Karnataka</option>
+                            <option>Andra Pradesh</option>
+                            <option>Tamil Nadu</option>
+							<option>Kerala</option>
+							<option>Rajasthan</option>
+							<option>Hariyana</option>
+							<option>Uttar Pradesh</option>
+							<option>Madhya Pradesh</option>
+						</select>
+					</label>
+						<label>
+						Zip code
+						<input type="number" name="" maxlength="7" placeholder="Zip code">
+					</label>
+                    <input type="submit" value="Ship To This Address" name="" id="btn">
+				</div>
+			</form>
+		</div>
    
 </body>
+<script>
+    let btn=document.getElementById("btn")
+
+    btn.addEventListener("submit",(e)=>{
+        e.preventDefault()
+
+       console.log("done")
+
+    })
+
+</script>
 </html>
