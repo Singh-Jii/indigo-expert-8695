@@ -399,6 +399,8 @@
 
 
 let container = document.getElementById("cardDiv")
+
+let fetchedData = [];
    
 const url = `https://fashionhub-mrc2.onrender.com/AllProducts`
 
@@ -408,6 +410,7 @@ fetch(url)
 })
 .then((actualData)=>{
     console.log(actualData)
+    fetchedData = actualData;
     displayData(actualData)
     
 })
@@ -415,6 +418,89 @@ fetch(url)
 .catch((error)=>{
       console.log(error)
     })
+
+
+//  sort code starts here 
+
+document.querySelector("#sort").addEventListener("change", on1)
+ function on1(){
+    let select=document.querySelector("#sort").value
+    
+
+    if(select=="lowhigh"){
+        fetchedData.sort(function(a,b){
+        
+            return a.price-b.price
+        })
+        displayData(fetchedData);
+    }else if(select=="highlow"){
+        fetchedData.sort(function(a,b){
+            return b.price-a.price
+        })
+        displayData(fetchedData);
+    }
+else if(select=="az"){
+        fetchedData.sort(function(a,b){
+    if(a.Brand>b.Brand) return 1
+    if(a.Brand<b.Brand) return -1
+    else return 0
+         })
+         displayData(fetchedData);
+        }else if(select=="za"){
+        fetchedData.sort(function(a,b){
+    if(a.Brand<b.Brand) return 1
+    if(a.Brand>b.Brand) return -1
+    else return 0
+         })
+         displayData(fetchedData)
+    }else if(select=="shl"){
+        fetchedData.sort(function(a,b){
+            if(a.size<b.size) return 1
+            if(a.size>b.size) return -1
+            else return 0
+        })
+        displayData(fetchedData)
+    }else if(select=="slh"){
+        fetchedData.sort(function(a,b){
+            if(a.size>b.size) return 1
+            if(a.size<b.size) return -1
+            else return 0
+        })
+        displayData(fetchedData)
+    }else if(select=="Newest"){
+        output=fetchedData.filter(function(el){
+            return(el.rating < 4)
+        })
+        displayData(output)
+    }else if(select=="Bestselling"){
+        output=fetchedData.filter(function(el){
+            return(el.rating > 4)
+        })
+        displayData(output)
+    }else if(select=="Featured"){
+        window.location.reload()
+    }
+
+    // window.location.reload()
+
+}
+
+document.querySelector("#price").addEventListener("click", pri)
+ function pri(){
+    fetchedData.sort(function(a,b){
+        return a.price-b.price
+    })
+    displayData(fetchedData)
+ }
+ document.querySelector("#size").addEventListener("click", siz)
+ function siz(){
+    fetchedData.filter(function(a,b){
+        return a.size-b.size
+    })
+    displayData(fetchedData)
+ }
+// sort code ends here
+
 
 
     function displayData(data){
@@ -434,8 +520,8 @@ fetch(url)
       let brand = document.createElement("p");
       brand.innerText= element.Brand;
 
-    //   let category = document.createElement("p");
-    //   category.innerText=element.category;
+      let rating = document.createElement("p");
+      rating.innerText=element.rating;
 
       let price = document.createElement("p");
       price.innerText=element.price;
@@ -467,7 +553,7 @@ fetch(url)
         }
       })
 
-      card.append(image, brand,price,button);
+      card.append(image, brand,price,rating,button);
       container.append(card)
 
 
