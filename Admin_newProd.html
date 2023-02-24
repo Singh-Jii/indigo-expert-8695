@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Pannel</title>
+    <link rel="stylesheet" href="./styles/Admin_newProd.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<body>
+
+    <div class="mainContainer">
+        <div class="navigator">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="">
+                </div>
+                <div class="links">
+                    <a href="./Admin_Home.html">Dashboard</a>
+                    <a href="./Admin_Product.html">All Product</a>
+                    <a href="./Admin_newProd.html">New Product</a>
+                    <a href="./User_Admin.html">Users</a>
+                    <a href="./order.html">Order</a>
+                    <a id="logout">Logout</a>
+                </div>
+            </div>
+        </div>
+        <div class="myform">
+            <h1 class="admin">New Product</h1>
+
+            <form>
+                <div>
+                    <span>Title :</span>
+                    <input type="text" placeholder="title" id="title">
+                </div>
+                <div>
+                    <span>Image_1 :</span>
+                    <input type="text" placeholder="Image_1 Link" id="Image_1">
+                </div>
+                <div>
+                    <span>Image_2 :</span>
+                    <input type="text" placeholder="Image_2 Link" id="Image_2">
+                </div>
+                <div>
+                    <span>Image_3 :</span>
+                    <input type="text" placeholder="Image_3 Link" id="Image_3">
+                </div>
+                <div>
+                    <span>Image_4 :</span>
+                    <input type="text" placeholder="Image_4 Link" id="Image_4">
+                </div>
+                <div>
+                    <span>Price :</span>
+                    <input type="text" placeholder="Price" id="Price">
+                </div>
+                <div>
+                    <span>Brand :</span>
+                    <input type="text" placeholder="Brand Name" id="Category">
+                </div>
+                <div>
+                    <span>Rating :</span>
+                    <input type="text" placeholder="Rating" id="Rating">
+                </div>
+                <div>
+                    <input type="submit" id="submit" value="Submit">
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <span class="notification" id="added"> ✅ Succesfully Added</span>
+    <span class="notification" id="Errors"> ❌ Failed</span>
+    <span class="notification" id="out"> ✅ Logout Success</span>
+</body>
+<script src="./scripts/Admin_newProd.js"></script>
+
+</html>
