@@ -6,8 +6,10 @@ i{
 }
 .stick{
     display: flex;
-    background-color: rgb(185, 147, 8);
+    background-color:rgb(2, 63, 63);
     color: white;
+    /* position: fixed; */
+    /* width: 99%; */
 }
 a{
     color: white;
@@ -18,6 +20,9 @@ a{
     display: flex;
     /* border: black 1px solid; */
     background-color: whitesmoke;
+    /* margin-bottom: 20px; */
+    /* padding-top: 55px; */
+    /* position: fixed; */
 }
 .select1 div:nth-child(1){
     margin-top: 15px;
@@ -42,6 +47,7 @@ a{
 }
 .logo{
     display: flex;
+    /* position: fixed; */
 }
 #logo1{
     height: 50px;
@@ -71,12 +77,15 @@ a{
 
 
 
-
+/* .nav{ */
+  /* position: fixed; */
+  /* border: 2px blue solid; */
+/* } */
 .drop_button {
     background-color: white;
     color: black;
     padding: 16px;
-    font-size: 16px;
+    font-size: 14px;
     border: none;
     cursor: pointer;
   }
@@ -137,16 +146,312 @@ a{
     margin-right: -50px;
   }
 
+
+  
+
   .shop{
     background-image: url("./dr.jpg");
     height: 650px;
     width: 95%;
     margin-left: 40px;
     margin-top: 30px;
+    /* border: 2px red solid; */
   }
   .shop button{
-    margin: auto;
+    width: 150px;
+    height: 45px;
+    margin-top: 595px;
+    margin-left:653px ;
+    border: none;
+    /* border: 7px solid rgb(110, 19, 152); */
   }
+  .shop button a{
+    color: black;
+    margin-left: -2px;
+    text-decoration: none;
+  }
+  .shop button a:hover{
+    text-decoration: underline;
+  }
+
+
+
+
+
+
+
+
+
+
  
-  
-  
+  .three{
+    display: flex;
+    margin-top: 25px;
+  }
+  #a1{
+    background-image: url("./b1.jpg");
+    width: 30%;
+    margin-left: 40px;
+    height: 667px;
+    margin-right: 37px;
+    /* border: none; */
+    /* text-decoration: none; */
+  }
+
+  #a2{
+    width:30%;
+    height: 667px;
+    background-image: url("./b2.jpg");
+    margin-right: 37px;
+    /* border: none; */
+    /* text-decoration: none; */
+  }
+
+  #a3{
+     background-image: url("./b3.jpg");
+     width: 30%;
+     height: 666px;
+     /* border: none; */
+     /* text-decoration: none; */
+  }
+  #a1 button a{
+    text-decoration: none;
+    color: black;
+    margin-right: 45px
+  }
+  #a1 button a:hover{
+    text-decoration: underline;
+  }
+  #a2 button a{
+    text-decoration: none;
+    color: black;
+    margin-right: 45px;
+  }
+  #a2 button a:hover{
+    text-decoration: underline;
+  }
+  #a3 button a{
+    text-decoration: none;
+    color: black;
+    margin-right: 45px;
+    /* height: 50px; */
+  }
+  #a3 button a:hover{
+    text-decoration: underline;
+  }
+  #a1 button{
+    margin-left: 25%;
+    margin-top: 609px;
+    height: 40px;
+    width: 220px;
+    border: none;
+  }
+  #a2 button{
+    margin-left: 25%;
+    margin-top: 608px;
+    height: 40px;
+    width: 220px;
+    border: none;
+  }
+  #a3 button{
+    margin-left: 25%;
+    margin-top: 606px;
+    height: 40px;
+    border: none;
+    width: 220px;
+  }
+
+
+
+
+
+  .four{
+    display: flex;
+  }
+  #cp1{
+    background-image: url("./food.jpg");
+    width: 700px;
+    height: 650px;
+    margin-right: 28px;
+    margin-left: 40px;
+    margin-top: 25px;
+  }
+  #cp2{
+    background-image: url("./fur.jpg");
+    width: 700px;
+    margin-top: 25px;
+    height: 650px;
+  }
+  #cp1 button{
+    margin-top: 589px;
+    margin-left: 255px;
+    height: 40px;
+    border: none;
+  }
+  #cp2 button{
+    margin-top: 589px;
+    margin-left: 274px;
+    height: 40px;
+    border: none;
+  }
+  #cp1 button a{
+    color: black;
+    margin-right: 55px;
+    text-decoration: none;
+  }
+  #cp1 button a:hover{
+    text-decoration: underline;
+  }
+  #cp2 button a{
+    color: black;
+    margin-right: 55px;
+    text-decoration: none;
+  }
+  #cp2 button a:hover{
+    text-decoration: underline;
+  }
+
+
+
+
+  .three1{
+    display: flex;
+    margin-top: 25px;
+  }
+  #a11{
+    background-image: url("./c1.jpg");
+    width: 30%;
+    margin-left: 40px;
+    height: 667px;
+    margin-right: 37px;
+    /* border: none; */
+    /* text-decoration: none; */
+  }
+
+  #a22{
+    width:30%;
+    height: 667px;
+    background-image: url("./c2.jpg");
+    margin-right: 37px;
+    /* border: none; */
+    /* text-decoration: none; */
+  }
+
+  #a33{
+     background-image: url("./c3.jpg");
+     width: 30%;
+     height: 666px;
+     /* border: none; */
+     /* text-decoration: none; */
+  }
+  #a11 button a{
+    text-decoration: none;
+    color: black;
+    margin-right: 22px;
+    margin-left:15px;
+  }
+  #a11 button a:hover{
+    text-decoration: underline;
+  }
+  #a22 button a{
+    text-decoration: none;
+    color: black;
+    margin-right: 45px;
+  }
+  #a22 button a:hover{
+    text-decoration: underline;
+  }
+  #a33 button a{
+    text-decoration: none;
+    color: black;
+    margin-right: 45px;
+    /* height: 50px; */
+  }
+  #a33 button a:hover{
+    text-decoration: underline;
+  }
+  #a11 button{
+    margin-left: 21%;
+    margin-top: 611px;
+    height: 40px;
+    width: 290px;
+    border: none;
+  }
+  #a22 button{
+    margin-left: 25%;
+    margin-top: 611px;
+    height: 40px;
+    width: 220px;
+    border: none;
+  }
+  #a33 button{
+    margin-left: 25%;
+    margin-top: 610px;
+    height: 40px;
+    border: none;
+    width: 220px;
+  }
+
+
+
+
+
+
+  .shop1{
+    background-image: url("./piku.jpg");
+    height: 650px;
+    width: 95%;
+    margin-left: 40px;
+    margin-top: 30px;
+    /* border: 2px red solid; */
+  }
+  .shop1 button{
+    width: 153px;
+    height: 45px;
+    margin-top: 595px;
+    margin-left:649px ;
+    border: none;
+    /* border: 1px solid rgb(110, 19, 152); */
+  }
+  .shop1 button a{
+    color: black;
+    margin-left: -2px;
+    text-decoration: none;
+  }
+  .shop1 button a:hover{
+    text-decoration: underline;
+  }
+
+
+
+
+  .all{
+    display: flex;
+  }
+  .all a{
+    color: teal;
+    font-size: small;
+    margin-top: 37px;
+    text-decoration: none;
+  }
+  .all a:hover{
+    text-decoration: underline;
+  }
+  .all p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 40px;
+    margin-top: 35px;
+    margin-right: 1230px;
+  }
+
+
+
+
+
+  .f1{
+    display: flex;
+  }
+  .f1 img{
+    width: 25%;
+  }
+
