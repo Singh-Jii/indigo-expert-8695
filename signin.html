@@ -15,6 +15,7 @@
        <div class="logoset"><img src="./logo.png" alt=""></div>
       <div id="signin">
       <h3 id="heading">Email Id and Password</h3>
+      <h5 id="empty"></h5>
       <form>
         <div class="form-element"> <label for="email">Email</label><input type="text" id="email" placeholder="Enter Email"> </div>
         <div class="form-element"><label for="password">Password</label> <input type="password" id="password" placeholder="Enter Password"></div>
@@ -30,7 +31,7 @@
 <script>
     var openbtn=document.querySelector("#open-popup-btn");
     var closebtn=document.querySelector(".popup-close-btn");
-
+    let warning=document.getElementById("empty");
     openbtn.addEventListener("click",function(){
         document.body.classList.add("popup-active")
     });
@@ -44,23 +45,65 @@
         let storeddata=JSON.parse(localStorage.getItem("account-data"))
         document.querySelector("form").addEventListener("submit",(e)=>{
           e.preventDefault();
-          display(storeddata);
-          function display(data){
-           data.forEach((e,i)=>{
-            if(email.value===e.Email  && password.value ===e.Password){
-              document.getElementById("heading").innerText="Sign in Successful";
-              alert("Login Sucessfull")
-              window.location.href="./afterloginn.html"
+         // display(storeddata);
+         
+       fetch ("https://fashionhub-mrc2.onrender.com/users",{
+    
+    method:"GET",
+   headers: {
+    'Content-Type': 'application/json'
+    // 'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    }).then((res)=>res.json().then((data)=>display(data)))    
+          function display(data){          
+            let flag=false;
+            if(email.value==""&& password.value==""){
+              warning.innerText="Please Enter Your Email and Password"
+              flag=true; 
             }
             else{
-              document.getElementById("heading").innerText="Wrong Credentials";
-              alert("Wrong Credentials")
-
+              data.forEach((e,i)=>{
+            if(email.value=="admin@gmail.com" && password.value=="Admin@1212" ){
+              // alert("Welcome Admin")
+              flag=true;
+              window.location.href="./index.html"
             }
+            if(email.value===e.email  && password.value ===e.Password){
+              document.getElementById("heading").innerText="Sign in Successful";
+              alert("Login Sucessfull")
+              flag=true;
+              warning.innerText=""
+            //  window.location.href="./afterloginn.html"
+            }
+            // else{
+            //   document.getElementById("heading").innerText="Wrong Credentials";
+            //   alert("Wrong Credentials")
+               //flag=false;
+           // }
            })
-          }
+            }
+          //  data.forEach((e,i)=>{
+          //   if(email.value===e.email  && password.value ===e.Password){
+          //     document.getElementById("heading").innerText="Sign in Successful";
+          //     alert("Login Sucessfull")
+          //     flag=true;
+          //   //  window.location.href="./afterloginn.html"
+          //   }
+          //   // else{
+          //   //   document.getElementById("heading").innerText="Wrong Credentials";
+          //   //   alert("Wrong Credentials")
+          //      //flag=false;
+          //  // }
+          //  })
+          //  console.log(flag)
+           if(!flag){
+            alert("Wrong Credentials")
+           }      //console.log(e.email,e.Password);
+       
+           }
 
-        })
+
+})
 
 </script>
 

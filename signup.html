@@ -18,12 +18,14 @@
   </div>
   <div id="signup">
     <div class="logoset"><img src="./logo.png" alt=""></div>
-    <h2>Register</h2>
+    <h2 class="h2">Register</h2>
 
     <form>
       <input type="text" id="name" placeholder="Full Name"><br>
       <input type="number"id="mobile" placeholder="Mobile No."><br>
-      <input type="email" id="email" placeholder="Emaid ID"><br>
+      <input type="text" id="gender" placeholder="Gender"><br> 
+      <input type="number" id="zipcode" placeholder="zipcode"><br>           
+      <input type="email" id="email" placeholder="Emaid ID"><br>      
       <input type="password" id="password" placeholder="Password"><br>
       <p>Password must be at least 8 characters long with 1 Uppercase, 1 Lowercase & 1 Numeric character.</p>
       <input type="submit" value="Submit"  class="submit"/>
@@ -31,7 +33,7 @@
   </div>
   <div class="back">
      <a href="./index.html"><i class="fa-solid fa-house"></i></a>
-     <a href="./signin.html"><i class="fa-solid fa-circle-chevron-left"></i></a>
+     <a href="./index.html"><i class="fa-solid fa-circle-chevron-left"></i></a>
     </div>
 </div>
 </body>
@@ -40,6 +42,9 @@
   let phone=document.getElementById("mobile")
   let email = document.getElementById("email");
   let password = document.getElementById("password");
+  let gender=document.getElementById("gender");
+  let zipcode=document.getElementById("zipcode");
+
   let personData = [];
   document.querySelector("form").addEventListener("submit", (e) => {
     e.preventDefault();
@@ -47,7 +52,9 @@
       name: name.value,
       email: email.value,
       Password: password.value,
-      MobileNo:phone.value
+      Phone:phone.value,
+      gender:gender.value,
+      zipcode:zipcode.value
     }
     personData.push(obj);
     // alert("Submit Sucessfull")
