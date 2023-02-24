@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./style/navbar.css">
     <link rel="stylesheet" href="./style/footer.css">
     <link rel="stylesheet" href="./style/backgroud.css">
-
+    <link rel="icon" type="image/png" href="/mainlogo.png">
     <script src="https://kit.fontawesome.com/38439e7720.js" crossorigin="anonymous"></script>
     <style>
         #upper{
@@ -399,6 +399,8 @@
 
 
 let container = document.getElementById("cardDiv")
+
+
    
 const url = `https://fashionhub-mrc2.onrender.com/AllProducts`
 
@@ -463,6 +465,7 @@ fetch(url)
         }else{
           cartData.push(element);
           localStorage.setItem("cart",JSON.stringify(cartData));
+          console.log(cartData)
           alert("Product added to The cart");
         }
       })

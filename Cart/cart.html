@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="product.html">
-    <link rel="icon" type="image/png" href="./mainlogo.png">
+    <link rel="icon" type="image/png" href="/mainlogo.png">
 
 </head>
 <style>
@@ -53,7 +53,7 @@
     }
     #Mian-3{
         display: grid;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(5,1fr);
         width: 69%;
         margin-left: 2%;
         justify-content: space-evenly;
@@ -130,7 +130,22 @@
 
    }
    #Span{
-    margin-left: 300px;
+    margin-left: 61%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+   }
+   #Span1{
+    margin-left: 60%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+   }
+   #Span2{
+    margin-left: 49%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+   }
+   #Span3{
+    margin-left: 69%;
     margin-top: 0px;
     margin-bottom: 0px;
    }
@@ -139,6 +154,27 @@
    }
    #gift{
     margin-left: 2%;
+   }
+   #Cart-items div{
+         display: grid;
+        grid-template-columns: repeat(5,1fr);
+        width: 69%;
+        margin-left: 2%;
+        justify-content: space-evenly;
+        /* border :1px solid red; */
+        align-items: center;
+        margin-right: 20px;
+   }
+   #Cart-items img{
+    width: 80%;
+        
+   }
+   #Cart-items select{
+    width: 20%;
+        
+   }
+   #Cart-items button{
+    width: 40%;
    }
 </style>
 <body>
@@ -153,10 +189,10 @@
             <div><a href="">800.309.2500</a></div>
             <div>
                <div id="Cart-Total">
-                    <p>Subtotal  <span id="Span">0</span></p>
-                    <p>Shipping <span id="Span">0</span></p>
-                    <p>Estimated Tax  <span id="Span">0</span></p>
-                    <p>Total  <span id="Span">0</span></p>
+                    <p>Subtotal  <span id="Span">$.</span></p>
+                    <p>Shipping <span id="Span1">$.</span></p>
+                    <p>Estimated Tax  <span id="Span2">$.</span></p>
+                    <p>Total  <span id="Span3">$.</span></p>
                     <p>Or 4 interest-free installments of $24.50 with</p>
                     <p>Klarna orAfterpay </p>
                     <p id="Procedbtn"><a href="shipping.html" style="text-decoration: none;" >PROCEED TO CHECKOUT</a></p>
@@ -168,9 +204,10 @@
     
     <div id="Mian-3">
         <div><h4>Item</h4></div>
-        <div><h4>Item Price</h4></div>
+        <div><h4>Brand</h4></div>
         <div><h4>Quantity</h4></div>
-        <div><h4>Total Price</h4></div>
+        <div><h4>Item Price</h4></div>
+        <div><h4>Remove</h4></div>
     </div>
     <div id="Cart-items">
         <!-- fetched items here -->
@@ -270,7 +307,12 @@ $('.js-filter').on('click', function(){
 
 </html>
 <script>
+
     let cartcontainer=document.getElementById("Cart-items")
+    let subtotal=document.getElementById("Span")
+    let shipping=document.getElementById("Span1")
+    let tax=document.getElementById("Span2")
+    let Total=document.getElementById("Span3")
    
    let cartData = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -280,7 +322,15 @@ $('.js-filter').on('click', function(){
  function renderData(user){
   console.log(user)
   cartcontainer.innerHTML=null
-  user.forEach((element) => {
+  user.forEach((element,index) => {
+
+      let total=0
+       user.forEach((element)=>{
+        total+=Math.ceil(+(element.price)+(+element.price*0.18))
+       })
+       Total.innerText="$."+total+".00"
+      
+
       
       let card=document.createElement("div")
       let image=document.createElement("img")
@@ -289,13 +339,29 @@ $('.js-filter').on('click', function(){
       brand.innerText= element.Brand;
       let price = document.createElement("p");
       price.innerText="$"+element.price;
-      let Quantity=document.createElement("p")
+
+      subtotal.innerText="$."+element.price
+      shipping.innerText="$."+"100.00"
+      tax.innerText="$."+(+element.price*0.18)
+    //   Total.innerText="$."+(+element.price+100+element.price*0.18)
+      let Quantity=document.createElement("select")
+
+      let option =document.createElement("option")
+      
       Quantity.innerText="Quantity"
       let Remove=document.createElement("button")
       Remove.innerHTML="Remove"
 
+      Remove.addEventListener("click",()=>{
+       user.splice(index,1)
+       console.log(user)
+        localStorage.setItem("cart",JSON.stringify(cartData))
+        renderData(user)
 
-      card.append(image,brand,price,Quantity,Remove)
+      })
+
+
+      card.append(image,brand,Quantity,price,Remove)
 
       cartcontainer.append(card)
 

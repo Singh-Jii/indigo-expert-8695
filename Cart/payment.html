@@ -5,43 +5,97 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Responsive Payment getway form design in Hindi</title>
 	<link rel="stylesheet" type="text/css" href="payment.css">
+	<link rel="icon" type="image/png" href="/mainlogo.png">
 </head>
 <body>
+	<div id="pay_alert"></div>
+	<div id="pay_alert2"></div>
 <header>
 	<div class="container">
 		<div class="right">
 			<h3>PAYMENT</h3>
-			<form>
+			<form id="Form">
 				Accepted Card <br>
-				<img src="http://127.0.0.1:5500/image/card1.png" width="100">
-				<img src="http://127.0.0.1:5500/image/card2.png" width="50">
+				<img src="/card1.png" width="100">
+				<img src="/card2.png" width="50">
 				<br><br>
 
 				Credit card number
-			<input type="text" name="" placeholder="Enter card number">
+			<input type="text" name="" maxlength="16" placeholder="Enter card number" id="cardnum">
 				
 				Exp month
-				<input type="text" name="" placeholder="Enter Month">
-				<div id="zip">
+				<label>
+					Exp year
+					<div id="month">
+						<select id="Month" >
+							<option class="month" value="">Choose Month..</option>
+							<option class="month" value="January">January</option>
+							<option class="month" value="February">February</option>
+							<option class="month" value="March">March</option>
+							<option class="month" value="April">April</option>
+							<option class="month" value="May">May</option>
+							<option class="month" value="June">June</option>
+							<option class="month" value="July">July</option>
+							<option class="month" value="August">August</option>
+							<option class="month" value="September">September</option>
+							<option class="month" value="October">October</option>
+							<option class="month" value="November">November</option>
+							<option class="month" value="December">December</option>
+						</select>
+					</div>
+				</label>
+				<div id="year">
 					<label>
 						Exp year
-						<select>
-							<option>Choose Year..</option>
-							<option>2022</option>
-							<option>2023</option>
-							<option>2024</option>
-							<option>2025</option>
+						<select  id="Year">
+							<option class="year" value="">Choose Year..</option>
+							<option class="year" value="2022">2022</option>
+							<option class="year" value="2023">2023</option>
+							<option class="year" value="2024">2024</option>
+							<option class="year" value="2025">2025</option>
 						</select>
 					</label>
 						<label>
 						CVV
-						<input type="number" name="" placeholder="CVV">
+						<input type="number" name="" placeholder="CVV" id="CCV">
 					</label>
 				</div>
+				<input type="submit" name="" value="PAY">
 			</form>
-			<input type="submit" name="" value="Proceed to Checkout">
+			
 		</div>
 	</div>
 </header>
 </body>
+<script>
+	let Form=document.getElementById("Form")
+	let PayAlert=document.getElementById("pay_alert")
+	let PAlert2=document.getElementById("pay_alert2")
+	let year=document.getElementsByClassName("year")
+	let Year=document.getElementById("Year")
+	let Month=document.getElementById("Month")
+
+	Form.addEventListener("submit",(e)=>{
+        e.preventDefault()
+		console.log(Year.value)
+		console.log(Month.value)
+
+
+		if(Form.cardnum.value==""||Form.Month.value==""||Form.Year.value==""||Form.CCV.value==""){
+			PayAlert.innerText="Please fill the required fields!"
+			
+	}
+	else{
+		PayAlert.innerText=null
+		PAlert2.innerText="Loading..."
+		setTimeout(()=>{
+			window.location.href = "done.html";
+		},2000)
+
+		
+	}
+       
+
+    })
+</script>
 </html>

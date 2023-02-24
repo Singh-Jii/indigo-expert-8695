@@ -39,17 +39,27 @@ form input[type="text"]{
 	outline: none;
 }
 
-#zip{
+#year{
 	display: flex;
 	margin-top: 0.5rem;
 }
-#zip select{
+#year select{
 	padding: 0.5rem 0.7rem;
 }
-#zip input[type="number"]{
+#year input[type="number"]{
 	padding: 0.5rem 0.7rem;
 	margin-left: 5px;	
 }
+#month select{
+	padding: 0.5rem 0.7rem;
+	width: 100%;
+}
+#month input[type="text"]{
+	padding: 0.5rem 0.7rem;
+	margin-left: 5px;
+	font-size: medium;	
+}
+
 input[type="submit"]{
 	width: 100%;
 	padding: 0.7rem 1.5rem;
@@ -63,6 +73,24 @@ input[type="submit"]{
 
 input[type="submit"]:hover{
 	background: #2c3e50;
+}
+#pay_alert{
+	width: 40%;
+	color: rgb(212, 81, 81);
+	height: 30px;
+	font-size: 30px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	
+
+}
+#pay_alert2{
+	width: 40%;
+	color: greenyellow;
+	text-align: center;
+	/* background-color: chartreuse; */
+	height: 30px;
+	font-size: 30px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOTHING</title>
 </head>
 <style>
     body{
@@ -89,9 +89,27 @@ input[type="submit"]:hover{
 		overflow-x: hidden;
 	}
 }
+#alert{
+	width: 40%;
+	color: rgb(212, 81, 81);
+	height: 30px;
+	font-size: 30px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	
+
+}
+#alert2{
+	width: 40%;
+	color: rgb(41, 226, 34);
+	height: 30px;
+	font-size: 30px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
     
 </style>
 <body>
+	<div id="alert" ></div>
+	<div id="alert2"></div>
     <div class="Details">
         <h2>
             <a
@@ -126,23 +144,23 @@ input[type="submit"]:hover{
     <div class="container">
 		<div class="left">
 			<h3>BILLING ADDRESS</h3>
-			<form>
+			<form id="form">
 				First Name*
-				<input type="text" name="" placeholder="First Name">
+				<input type="text" name="" placeholder="First Name" id="fname">
 				Last Name*
-				<input type="text" name="" placeholder="Last Name">
+				<input type="text" name="" placeholder="Last Name" id="lname">
 
 				Street Address*
-				<input type="text" name="" placeholder="Enter address">
+				<input type="text" name="" placeholder="Enter address" id="adress">
 
                 Mobile Number*
-                <input type="text" name="" maxlength="12" placeholder="+91">
+                <input type="text" name="" maxlength="13" placeholder="+91" id="mble">
 
                 <!-- Mobile Number*
                 <input type="number" name="" maxlength="12" placeholder="+91"> -->
 				
 				City*
-				<input type="text" name="" placeholder="Enter City">
+				<input type="text" name="" placeholder="Enter City" id="city">
 				<div id="zip">
 					<label>
 						State
@@ -160,7 +178,7 @@ input[type="submit"]:hover{
 					</label>
 						<label>
 						Zip code
-						<input type="number" name="" maxlength="7" placeholder="Zip code">
+						<input type="number" name="" maxlength="7" placeholder="Zip code" id="zipcode">
 					</label>
                     <input type="submit" value="Ship To This Address" name="" id="btn">
 				</div>
@@ -169,12 +187,29 @@ input[type="submit"]:hover{
    
 </body>
 <script>
-    let btn=document.getElementById("btn")
+    let form=document.getElementById("form")
+	let Alert=document.getElementById("alert")
+	let Alert2=document.getElementById("alert2")
+	
 
-    btn.addEventListener("submit",(e)=>{
+    form.addEventListener("submit",(e)=>{
         e.preventDefault()
 
-       console.log("done")
+
+		if(form.fname.value==""||form.lname.value==""||form.adress.value==""||form.mble.value==""||form.city.value==""||form.zipcode.value==""){
+			Alert.innerText="Please fill the required fields!"
+			
+	}
+	else{
+		Alert.innerText=null
+		Alert2.innerText="Loading..."
+		setTimeout(()=>{
+			window.location.href = "payment.html";
+		},2000)
+
+		
+	}
+       
 
     })
 
