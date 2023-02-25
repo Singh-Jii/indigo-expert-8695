@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./signin.css">
+    <!-- <link rel="stylesheet" href="./signup.css"> -->
 </head>
 <body>
     
@@ -21,90 +22,34 @@
         <div class="form-element"><label for="password">Password</label> <input type="password" id="password" placeholder="Enter Password"></div>
         <div class="form-element"><input type="checkbox" id="check"><label for="password">Remember Me</label></div>
         <div class="form-element"><button>Sign In</button></div>
-        <div class="form-element"><a href="./signup.html">Register Here?</a></div> 
+        <div class="form-element"><button id="registerbtn">Register Here?</button></div> 
       </form>       
     </div>
     <div class="popup-close-btn">&times;</div>
     </div>
+    <!-- ///////////////////////// -->
+    <div class="set" id="registerform">
+      <div class="nav">
+        
+      </div>
+      <div id="signup">
+        <div class="logoset1"><img src="./logo.png" alt=""></div>
+        <h2 class="h2">Register</h2>
+    
+        <form>
+          <input type="text" id="name" placeholder="Full Name"><br>
+          <input type="number"id="mobile" placeholder="Mobile No."><br>
+          <input type="text" id="gender" placeholder="Gender"><br> 
+          <input type="number" id="zipcode" placeholder="Zipcode"><br>           
+          <input type="email" id="Email" class="Email" placeholder="Emaid ID"><br>      
+          <input type="password" id="Password" class="Password" placeholder="Password"><br>
+          <p>Password must be at least 8 characters long with 1 Uppercase, 1 Lowercase & 1 Numeric character.</p>
+          <input type="submit" value="Submit"  class="submit" id="submit_btn"/>
+        </form> <br>         
+
+      </div>
+    </div>
        
 </body>
-<script>
-    var openbtn=document.querySelector("#open-popup-btn");
-    var closebtn=document.querySelector(".popup-close-btn");
-    let warning=document.getElementById("empty");
-    openbtn.addEventListener("click",function(){
-        document.body.classList.add("popup-active")
-    });
-    closebtn.addEventListener("click",function(){
-        document.body.classList.remove("popup-active")
-    });
-    let email=document.getElementById("email")
-        let mobile=document.getElementById("mobile")
-        let password=document.getElementById("password");
-
-        let storeddata=JSON.parse(localStorage.getItem("account-data"))
-        document.querySelector("form").addEventListener("submit",(e)=>{
-          e.preventDefault();
-         // display(storeddata);
-         
-       fetch ("https://fashionhub-mrc2.onrender.com/users",{
-    
-    method:"GET",
-   headers: {
-    'Content-Type': 'application/json'
-    // 'Content-Type': 'application/x-www-form-urlencoded',
-    },
-    }).then((res)=>res.json().then((data)=>display(data)))    
-          function display(data){          
-            let flag=false;
-            if(email.value==""&& password.value==""){
-              warning.innerText="Please Enter Your Email and Password"
-              flag=true; 
-            }
-            else{
-              data.forEach((e,i)=>{
-            if(email.value=="admin@gmail.com" && password.value=="Admin@1212" ){
-              // alert("Welcome Admin")
-              flag=true;
-              window.location.href="./index.html"
-            }
-            if(email.value===e.email  && password.value ===e.Password){
-              document.getElementById("heading").innerText="Sign in Successful";
-              alert("Login Sucessfull")
-              flag=true;
-              warning.innerText=""
-            //  window.location.href="./afterloginn.html"
-            }
-            // else{
-            //   document.getElementById("heading").innerText="Wrong Credentials";
-            //   alert("Wrong Credentials")
-               //flag=false;
-           // }
-           })
-            }
-          //  data.forEach((e,i)=>{
-          //   if(email.value===e.email  && password.value ===e.Password){
-          //     document.getElementById("heading").innerText="Sign in Successful";
-          //     alert("Login Sucessfull")
-          //     flag=true;
-          //   //  window.location.href="./afterloginn.html"
-          //   }
-          //   // else{
-          //   //   document.getElementById("heading").innerText="Wrong Credentials";
-          //   //   alert("Wrong Credentials")
-          //      //flag=false;
-          //  // }
-          //  })
-          //  console.log(flag)
-           if(!flag){
-            alert("Wrong Credentials")
-           }      //console.log(e.email,e.Password);
-       
-           }
-
-
-})
-
-</script>
-
 </html>
+<script src="./signin.js"></script>
