@@ -123,11 +123,35 @@
    }
    #Paythmbtn1{
     padding: 3%;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     color: white;
     text-align: center;
+    background-color: gray;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: block;
+    color: aliceblue;
+    padding: 3%;
+    /* border: 1px solid gray; */
+    background-color: #455A64;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
 
+   }
+   #Paythmbtn1 a{
+    display: block;
+    color: aliceblue;
+    padding: 3%;
+    /* border: 1px solid gray; */
+    background-color: #455A64;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+
+   }
+   #Paythmbtn1 a:hover{
+    color: #455A64;
+    background-color: white;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    }
    #Span{
     margin-left: 61%;
@@ -153,7 +177,14 @@
     padding-top: 3%;
    }
    #gift{
-    margin-left: 2%;
+    margin-left: 8%;
+    margin-top: 3%;
+    
+   }
+   #gift a{
+    margin-left: 3%;
+    margin-top: 3%;
+    
    }
    #Cart-items div{
          display: grid;
@@ -178,25 +209,28 @@
    }
 </style>
 <body>
+   <!-- Nav Bar -->
+
     <div id="MainCart">
         <div id="Mian-1">
             <div><h2>Basket</h2></div>
             <div><a href="">Delivery Option</a></div>
+            
         </div>
-       
+
         <div id="Mian-2">
             <div><h4>Order Summary</h4></div>
             <div><a href="">800.309.2500</a></div>
             <div>
                <div id="Cart-Total">
-                    <p>Subtotal  <span id="Span">$.</span></p>
-                    <p>Shipping <span id="Span1">$.</span></p>
-                    <p>Estimated Tax  <span id="Span2">$.</span></p>
-                    <p>Total  <span id="Span3">$.</span></p>
+                    <p>Subtotal  <span id="Span">$.0</span></p>
+                    <p>Shipping <span id="Span1">$.0</span></p>
+                    <p>Estimated Tax  <span id="Span2">$.0</span></p>
+                    <p>Total  <span id="Span3">$.0</span></p>
                     <p>Or 4 interest-free installments of $24.50 with</p>
                     <p>Klarna orAfterpay </p>
                     <p id="Procedbtn"><a href="shipping.html" style="text-decoration: none;" >PROCEED TO CHECKOUT</a></p>
-                    <p id="Paythmbtn1"><a href="payment.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Paytm_Logo_%28standalone%29.svg/2560px-Paytm_Logo_%28standalone%29.svg.png" width="40%" alt=""></a></p>
+                    <p id="Paythmbtn1"><a href="payment.html" style="text-decoration: none;">PAYMENT<img src="" width="40%" alt=""></a></p>
                </div>
             </div>
         </div>
@@ -215,13 +249,14 @@
   
        
     </div>
-
+    
     <div id="gift"><img width="20px" src="data:image/svg+xml,%3csvg class='i-giftwrap' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3e%3cpath d='M16.85 1.15v15.7H1.15V1.15h15.7m.9-.9H.25v17.5h17.5V.25Z' style='fill:%23167a92'/%3e%3cpath d='M9 .571v16.858M.571 9h16.858m-3.835 2.678a6.716 6.716 0 0 1-4.292-2.681m-4.896 2.681a6.716 6.716 0 0 0 4.292-2.681m.302 0c-1.218-.127-2.98-.293-3.69-1.262A1.34 1.34 0 0 1 6.247 5.6a1.71 1.71 0 0 1 1.054.315 3.045 3.045 0 0 1 .803.955A8.842 8.842 0 0 1 9 8.997Zm0 0c1.218-.127 2.98-.293 3.69-1.262a1.34 1.34 0 0 0-.936-2.134 1.71 1.71 0 0 0-1.054.315 3.045 3.045 0 0 0-.803.955A8.842 8.842 0 0 0 9 8.997Z' style='fill:none;stroke:%23167a92;stroke-width:.9px'/%3e%3c/svg%3e" alt=""><a href=""></a> Add Gift Wrap</div>
     
      
 
     
     <div>
+       
         <div><h2>Saved for Later</h2></div>
         <div id="box"><p>Your saved for later is currently empty. Add items here that you like, but aren't ready to buy.</p></div>
     </div>
@@ -328,8 +363,19 @@ $('.js-filter').on('click', function(){
        user.forEach((element)=>{
         total+=Math.ceil(+(element.price)+(+element.price*0.18))
        })
-       Total.innerText="$."+total+".00"
+       Total.innerText="$."+(+total+100)+".00"
       
+      let subTotal=0
+      user.forEach((element)=>{
+        subTotal+=Math.ceil(+(element.price))
+      })
+      subtotal.innerText="$."+subTotal+".00"
+
+      let Totaltax=0
+      user.forEach((element)=>{
+        Totaltax+=Math.ceil(+(element.price)*(0.18))
+      })
+      tax.innerText="$."+Totaltax+".00"
 
       
       let card=document.createElement("div")
@@ -340,13 +386,20 @@ $('.js-filter').on('click', function(){
       let price = document.createElement("p");
       price.innerText="$"+element.price;
 
-      subtotal.innerText="$."+element.price
+   
       shipping.innerText="$."+"100.00"
-      tax.innerText="$."+(+element.price*0.18)
-    //   Total.innerText="$."+(+element.price+100+element.price*0.18)
-      let Quantity=document.createElement("select")
+      
+     
 
-      let option =document.createElement("option")
+      let Quantity=document.createElement("select")
+    //   let option=document.createElement("p")
+    //   option.innerText="1"
+
+      
+    //   select.append(option)
+      
+
+    //   let option =document.createElement("option")
       
       Quantity.innerText="Quantity"
       let Remove=document.createElement("button")
@@ -367,6 +420,8 @@ $('.js-filter').on('click', function(){
 
       
   });
+
+
 
  }
 </script>

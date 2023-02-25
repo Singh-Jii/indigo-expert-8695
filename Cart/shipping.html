@@ -13,18 +13,18 @@
     .Details{
         padding: 1%;
     }
-    *{padding:0; margin:0; box-sizing: border-box; font-family:sans-serif;}   
+	*{padding:0; margin:0; box-sizing: border-box; font-family:sans-serif;}
 header{
 	width: 100vw;
 	min-height: 100vh;
-	background: #dfe3e7;
+	background: #34495e;
 	font-size: 1.2rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 .container{
-	background: rgb(244, 244, 248);
+	background: white;
 	max-width: 800px;
 	min-height: 500px;
 	display: flex;
@@ -38,6 +38,22 @@ header{
 .right{
 	flex-basis: 50%;
 }
+form{
+	padding: 1rem;
+}
+
+h3{
+	margin-top: 1rem;
+	color:#2c3e50;
+	}
+
+form input[type="text"]{
+	width: 100%;
+	padding: 0.5rem 0.7rem;
+	margin: 0.5rem 0;
+	outline: none;
+}
+
 form{
 	padding: 1rem;
 }
@@ -94,6 +110,7 @@ input[type="submit"]:hover{
 	color: rgb(212, 81, 81);
 	height: 30px;
 	font-size: 30px;
+	text-align: center;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	
 
@@ -103,13 +120,13 @@ input[type="submit"]:hover{
 	color: rgb(41, 226, 34);
 	height: 30px;
 	font-size: 30px;
+	text-align: center;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
     
 </style>
 <body>
-	<div id="alert" ></div>
-	<div id="alert2"></div>
+	
     <div class="Details">
         <h2>
             <a
@@ -140,7 +157,8 @@ input[type="submit"]:hover{
                >Review</a>
         </h2>
     </div>
-
+    <div id="alert" ></div>
+	<div id="alert2"></div>
     <div class="container">
 		<div class="left">
 			<h3>BILLING ADDRESS</h3>
@@ -164,16 +182,16 @@ input[type="submit"]:hover{
 				<div id="zip">
 					<label>
 						State
-						<select>
-                            <option>Choose State..</option>
-                            <option>Karnataka</option>
-                            <option>Andra Pradesh</option>
-                            <option>Tamil Nadu</option>
-							<option>Kerala</option>
-							<option>Rajasthan</option>
-							<option>Hariyana</option>
-							<option>Uttar Pradesh</option>
-							<option>Madhya Pradesh</option>
+						<select id="State">
+                            <option value="">Choose State..</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Andra Pradesh">Andra Pradesh</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+							<option value="Kerala">Kerala</option>
+							<option value="Rajasthan">Rajasthan</option>
+							<option value="Hariyana">Hariyana</option>
+							<option value="Uttar Pradesh">Uttar Pradesh</option>
+							<option value="Madhya Pradesh">Madhya Pradesh</option>
 						</select>
 					</label>
 						<label>
@@ -190,28 +208,67 @@ input[type="submit"]:hover{
     let form=document.getElementById("form")
 	let Alert=document.getElementById("alert")
 	let Alert2=document.getElementById("alert2")
-	
 
     form.addEventListener("submit",(e)=>{
-        e.preventDefault()
-
-
-		if(form.fname.value==""||form.lname.value==""||form.adress.value==""||form.mble.value==""||form.city.value==""||form.zipcode.value==""){
+        e.preventDefault()	 
+		  
+		 if(form.fname.value==""&&form.lname.value==""&&form.adress.value==""&&form.mble.value==""&&form.city.value==""&&form.zipcode.value==""&&form.State.value==""){
 			Alert.innerText="Please fill the required fields!"
 			
-	}
-	else{
-		Alert.innerText=null
-		Alert2.innerText="Loading..."
-		setTimeout(()=>{
-			window.location.href = "payment.html";
-		},2000)
+}
+else if(form.fname.value==""){
+	Alert.innerText="Please fill the First Name!"
+}
+else if(form.lname.value==""){
+	Alert.innerText="Please fill the Last Name!"
+}
+else if(form.adress.value==""){
+	Alert.innerText="Please fill the Adress!"
+}
+else if(form.mble.value==""){
+	Alert.innerText="Please fill the Mobile Number!"
+}
+else if(form.city.value==""){
+	Alert.innerText="Please fill the City Name!"
+}
+else if(form.zipcode.value==""){
+	Alert.innerText="Please fill the ZIp Code!"
+}
+else if(form.State.value==""){
+	Alert.innerText="Please fill the State Name"
+}
+else{
 
-		
+	let shippingData=[]
+   form.addEventListener("submit", (e)=>{
+	let shippingData = JSON.parse(localStorage.getItem("customer")) || [];
+	e.preventDefault()
+	let obj={
+		first_name:form.fname.value,
+	    last_name:form.lname.value,
+		address:form.adress.value,
+		mobile:form.mble.value,
+		city:form.city.value,
+		zip:form.zipcode.value,
+		state:form.State.value
 	}
-       
+	shippingData.push(obj)
+	console.log(shippingData)
+	
+	localStorage.setItem("customer",JSON.stringify(shippingData))
 
     })
 
+	Alert.innerText=null
+	Alert2.innerText="Loading..."
+		setTimeout(()=>{
+			window.location.href = "payment.html";
+		},2000)
+    
+  }
+
+   
+   
+})
 </script>
 </html>

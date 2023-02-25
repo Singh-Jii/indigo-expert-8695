@@ -8,19 +8,21 @@
 	<link rel="icon" type="image/png" href="/mainlogo.png">
 </head>
 <body>
-	<div id="pay_alert"></div>
-	<div id="pay_alert2"></div>
 <header>
 	<div class="container">
 		<div class="right">
 			<h3>PAYMENT</h3>
+			<div id="pay_alert"></div>
+	        <div id="pay_alert2"></div>
 			<form id="Form">
 				Accepted Card <br>
 				<img src="/card1.png" width="100">
 				<img src="/card2.png" width="50">
+				
 				<br><br>
 
 				Credit card number
+
 			<input type="text" name="" maxlength="16" placeholder="Enter card number" id="cardnum">
 				
 				Exp month
@@ -81,11 +83,40 @@
 		console.log(Month.value)
 
 
-		if(Form.cardnum.value==""||Form.Month.value==""||Form.Year.value==""||Form.CCV.value==""){
+	if(Form.cardnum.value==""&&Form.Month.value==""&&Form.Year.value==""&&Form.CCV.value==""){
 			PayAlert.innerText="Please fill the required fields!"
 			
 	}
+	else if(Form.cardnum.value==""){
+		PayAlert.innerText="Please fill the Credit card Number!"
+	}
+	else if(Form.Month.value==""){
+		PayAlert.innerText="Please fill the Month!"
+	}
+	else if(Form.Year.value==""){
+		PayAlert.innerText="Please fill the Year!"
+	}
+	else if(Form.CCV.value==""){
+		PayAlert.innerText="Please fill the CCV Number"
+	}
 	else{
+		let shippingData = JSON.parse(localStorage.getItem("customer")) || [];
+
+		let cartData = JSON.parse(localStorage.getItem("cart")) || [];
+
+		
+		// localStorage.setItem("customer",JSON.stringify(shippingData))
+		// localStorage.setItem("cart",JSON.stringify(cartData))
+
+		
+
+		
+
+
+
+
+
+
 		PayAlert.innerText=null
 		PAlert2.innerText="Loading..."
 		setTimeout(()=>{
@@ -93,9 +124,19 @@
 		},2000)
 
 		
+
+
+
+
+	
 	}
+
+	
+
        
 
     })
+
+	
 </script>
 </html>

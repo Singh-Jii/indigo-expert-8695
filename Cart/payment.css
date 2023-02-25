@@ -75,21 +75,24 @@ input[type="submit"]:hover{
 	background: #2c3e50;
 }
 #pay_alert{
-	width: 40%;
+	width: 80%;
 	color: rgb(212, 81, 81);
 	height: 30px;
-	font-size: 30px;
+	text-align: center;
+	font-size: larger;
+	margin-bottom: 1%;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	
 
 }
 #pay_alert2{
-	width: 40%;
+	width: 80%;
 	color: greenyellow;
 	text-align: center;
 	/* background-color: chartreuse; */
 	height: 30px;
-	font-size: 30px;
+	font-size: larger;
+	margin-bottom: 1%;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
