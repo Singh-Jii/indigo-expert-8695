@@ -450,8 +450,73 @@ a{
 
   .f1{
     display: flex;
+    /* border: 2px red solid; */
+    margin-top: 35px;
   }
-  .f1 img{
-    width: 25%;
+  .f2{
+    /* border: 2px green solid; */
+    width: 22%;
+    margin-left: 33px;
+    /* margin-top: 35px; */
   }
+  .f2 img{
+    width: 100%;
+    /* border: 4px purple solid; */
+    margin-bottom: 10px;
+  }
+  .f2 h2{
+    font-weight: lighter;
+    color: rgb(58, 50, 50);
+  }
+  .p1{
+    font-size: smaller;
+    color: rgb(58, 50, 50);
+    /* margin-top: 10px; */
+  }
+  .p2{
+    color: rgb(58, 50, 50);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .f2 a{
+    color: teal;
+    margin-left: 0px;
+    /* border:3px solid blue ; */
+  }
+  .f2 a:hover{
+    text-decoration: none;
+  }
+  .container2 div{
+    /* background-color: black; */
+    width: 60%;
+    margin: auto;
+    /* background-color: #FBE9E7; */
+    
+   }
+   .container2 button{
+    background-color: rgb(0, 0, 0);
+    border: 10%;
+    padding: 2%;
+    margin-right: 2%;
+   }
+   .slider2 img{
+    display: block;
+    border: 1px solid black;
+    width: 50%;
+   }
+   .slider2 a{
+    width: 100%;
+    margin-left: 3px;
+    margin: auto;
+   }
 
+
+
+
+
+
+
+
+
+
+
+  
