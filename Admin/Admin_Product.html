@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Pannel</title>
+    <link rel="stylesheet" href="./styles/Admin_Product.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<body>
+
+    <div class="mainContainer">
+        <div class="navigator">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="">
+                </div>
+                <div class="links">
+                    <a href="./Admin_Home.html">Dashboard</a>
+                    <a href="./Admin_Product.html">All Product</a>
+                    <a href="./Admin_newProd.html">New Product</a>
+                    <a href="./User_Admin.html">Users</a>
+                    <a href="./order.html">Order</a>
+                    <a id="logout">Logout</a>
+                </div>
+            </div>
+        </div>
+        <div class="month_Chart">
+            <h1 class="admin">Admin Pannel</h1>
+            
+            
+            <div class="table">
+                <table>
+                    <thead>
+                        <th>Product ID</th>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>rating</th>
+                        <th>price($)</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </thead>
+                    <tbody id="Tbody">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <span class="notification" id="out"> ✅  Logout Success</span>
+</body>
+<script src="./scripts/Admin_product.js"></script>
+
+</html>
