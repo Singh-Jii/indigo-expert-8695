@@ -35,3 +35,4 @@ For support, email -gentalman1945@gmail.com
 
 Contributions are always welcome!
 ## Authors
+-[Ramanjeet Singh](github.com/gzbsingh)
