@@ -6,12 +6,17 @@ i{
 }
 .stick{
     display: flex;
+    height: 50px;
     background-color:rgb(2, 63, 63);
     color: white;
     /* position: fixed; */
     /* width: 99%; */
 }
-a{
+.stick p{
+  margin-top: 15px;
+
+}
+.stick a{
     color: white;
     margin-top: 15px;
     margin-left: 50px;
@@ -24,7 +29,7 @@ a{
     /* padding-top: 55px; */
     /* position: fixed; */
 }
-.select1 div:nth-child(1){
+.lovely{
     margin-top: 15px;
     margin-left:1260px;
     margin-right: 20px;
@@ -56,6 +61,7 @@ a{
     margin-right: 50px;
     margin-left: 50px;
     margin-top: 4px;
+    margin-bottom: 2px;
 }
 .search{
     display: flex;
@@ -92,7 +98,7 @@ a{
   
   /* The container <div> - needed to position the dropdown content */
   .drop_down {
-    position: relative;
+    /* position: relative; */
     display: inline-block;
   }
   
@@ -138,12 +144,16 @@ a{
 
   .pic1{
        display: flex;
-       /* border: 2px solid black; */
+       /* margin-left: 40px; */
+       /* border: 2px solid rgb(227, 18, 18); */
   }
 
   .pic1 a img{
     width: 353px;
     margin-right: -50px;
+    margin-left: 50px;
+    /* margin: auto; */
+    margin-top: 30px;
   }
 
 
@@ -666,3 +676,179 @@ a{
     margin-top: 0px;
     /* border: 3px black solid; */
   }
+
+
+
+
+
+/* medium screen */
+  @media all and (min-width:768px) and (max-width:1024px) {
+
+    .stick{
+      display: flex;
+      background-color:rgb(2, 63, 63);
+      color: white;
+      flex-direction: column;
+      /* position: fixed; */
+      /* width: 99%; */
+  }
+  .select1{
+      display: flex;
+      /* border: black 1px solid; */
+      flex-direction: column;
+      background-color: whitesmoke;
+      /* margin-bottom: 20px; */
+      /* padding-top: 55px; */
+      /* position: fixed; */
+  }
+  .search{
+      display: flex;
+      height: 35px;
+      margin-left: 620px;
+      border: 2px rgb(21, 151, 151) solid;
+      flex-direction: column;
+      width: 399x;
+      border-radius: 4px;
+      margin-top: 13px;
+      /* border: red 2px solid; */
+  
+  }
+  .pic1{
+      display: flex;
+      /* border: 2px solid black; */
+      flex-direction: column;
+  }
+  .three{
+      display: flex;
+      margin-top: 25px;
+      flex-direction: column;
+    }
+    .four{
+      display: flex;
+      flex-direction: column;
+    }
+    .three1{
+      display: flex;
+      margin-top: 25px;
+      flex-direction: column;
+    }
+  
+    .all{
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .f1{
+      display: flex;
+      /* border: 2px red solid; */
+      margin-top: 35px;
+      flex-direction: column;
+    }
+    .divi{
+      /* border: 2px black solid; */
+      display: flex;
+      margin-top: 30px;
+      flex-direction: column;
+     }
+     .footer1{
+      display: flex;
+      /* border: 2px purple solid; */
+      background-color: whitesmoke;
+      margin-top: 40px;
+      flex-direction: column;
+    }
+    .pri{
+      margin-top: 60px;
+      display: flex;
+      flex-direction: column;
+     }
+    
+    
+      
+  }
+/* small screen */
+  @media all and (min-width:320px) and (max-width:767px) {
+
+    .stick{
+      display: flex;
+      background-color:rgb(2, 63, 63);
+      color: white;
+      flex-direction: column;
+      /* position: fixed; */
+      /* width: 99%; */
+  }
+  .select1{
+      display: flex;
+      /* border: black 1px solid; */
+      flex-direction: column;
+      background-color: whitesmoke;
+      /* margin-bottom: 20px; */
+      /* padding-top: 55px; */
+      /* position: fixed; */
+  }
+  .search{
+      display: flex;
+      height: 35px;
+      margin-left: 620px;
+      border: 2px rgb(21, 151, 151) solid;
+      flex-direction: column;
+      width: 399x;
+      border-radius: 4px;
+      margin-top: 13px;
+      /* border: red 2px solid; */
+  
+  }
+  .pic1{
+      display: flex;
+      /* border: 2px solid black; */
+      flex-direction: column;
+  }
+  .three{
+      display: flex;
+      margin-top: 25px;
+      flex-direction: column;
+    }
+    .four{
+      display: flex;
+      flex-direction: column;
+    }
+    .three1{
+      display: flex;
+      margin-top: 25px;
+      flex-direction: column;
+    }
+  
+    .all{
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .f1{
+      display: flex;
+      /* border: 2px red solid; */
+      margin-top: 35px;
+      flex-direction: column;
+    }
+    .divi{
+      /* border: 2px black solid; */
+      display: flex;
+      margin-top: 30px;
+      flex-direction: column;
+     }
+     .footer1{
+      display: flex;
+      /* border: 2px purple solid; */
+      background-color: whitesmoke;
+      margin-top: 40px;
+      flex-direction: column;
+    }
+    .pri{
+      margin-top: 60px;
+      display: flex;
+      flex-direction: column;
+     }
+    
+    
+  }
+    
+  
