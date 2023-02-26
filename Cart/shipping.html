@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOTHING</title>
+</head>
+<style>
+    body{
+       background: rgb(218, 214, 233);
+    }
+    .Details{
+        padding: 1%;
+    }
+	*{padding:0; margin:0; box-sizing: border-box; font-family:sans-serif;}
+header{
+	width: 100vw;
+	min-height: 100vh;
+	background: #34495e;
+	font-size: 1.2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container{
+	background: white;
+	max-width: 800px;
+	min-height: 500px;
+	display: flex;
+	justify-content:space-between;
+	align-items: flex-start;
+	padding: 0.5rem 1.5rem;
+}
+.left{
+	flex-basis: 50%;
+}
+.right{
+	flex-basis: 50%;
+}
+form{
+	padding: 1rem;
+}
+
+h3{
+	margin-top: 1rem;
+	color:#2c3e50;
+	}
+
+form input[type="text"]{
+	width: 100%;
+	padding: 0.5rem 0.7rem;
+	margin: 0.5rem 0;
+	outline: none;
+}
+
+form{
+	padding: 1rem;
+}
+
+h3{
+	margin-top: 1rem;
+	color:#2c3e50;
+	}
+
+form input[type="text"]{
+	width: 100%;
+	padding: 0.5rem 0.7rem;
+	margin: 0.5rem 0;
+	outline: none;
+}
+
+#zip{
+	display: flex;
+	margin-top: 0.5rem;
+}
+#zip select{
+	padding: 0.5rem 0.7rem;
+}
+#zip input[type="number"]{
+	padding: 0.5rem 0.7rem;
+	margin-left: 5px;	
+}
+input[type="submit"]{
+	width: 100%;
+	padding: 0.7rem 1.5rem;
+	background: #34495e;
+	color: white;
+	border: none;
+	outline: none;
+	margin-top: 1rem;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover{
+	background: #2c3e50;
+}
+
+
+@media only screen and (max-width: 770px){
+	.container{
+		flex-direction: column;
+	}
+	body{
+		overflow-x: hidden;
+	}
+}
+#alert{
+	width: 40%;
+	color: rgb(212, 81, 81);
+	height: 30px;
+	font-size: 30px;
+	text-align: center;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	
+
+}
+#alert2{
+	width: 40%;
+	color: rgb(41, 226, 34);
+	height: 30px;
+	font-size: 30px;
+	text-align: center;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+    
+</style>
+<body>
+	
+    <div class="Details">
+        <h2>
+            <a
+                href=""
+                style="
+                    text-decoration: none;
+                    color: #000000;
+                    font-family: 'Varela Round', sans-serif;
+                "
+                >Ship or Pick Up</a
+            >
+            /
+            <a
+                href="payment.html"
+                style="
+                    text-decoration: none;
+
+                    font-family: 'Varela Round', sans-serif;
+                "
+                >Payment</a
+            >
+            /
+            <a href=""
+            style="
+            text-decoration: none;
+            font-family: 'Varela Round', sans-serif;
+                "
+               >Review</a>
+        </h2>
+    </div>
+    <div id="alert" ></div>
+	<div id="alert2"></div>
+    <div class="container">
+		<div class="left">
+			<h3>BILLING ADDRESS</h3>
+			<form id="form">
+				First Name*
+				<input type="text" name="" placeholder="First Name" id="fname">
+				Last Name*
+				<input type="text" name="" placeholder="Last Name" id="lname">
+
+				Street Address*
+				<input type="text" name="" placeholder="Enter address" id="adress">
+
+                Mobile Number*
+                <input type="text" name="" maxlength="13" placeholder="+91" id="mble">
+
+                <!-- Mobile Number*
+                <input type="number" name="" maxlength="12" placeholder="+91"> -->
+				
+				City*
+				<input type="text" name="" placeholder="Enter City" id="city">
+				<div id="zip">
+					<label>
+						State
+						<select id="State">
+                            <option value="">Choose State..</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Andra Pradesh">Andra Pradesh</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+							<option value="Kerala">Kerala</option>
+							<option value="Rajasthan">Rajasthan</option>
+							<option value="Hariyana">Hariyana</option>
+							<option value="Uttar Pradesh">Uttar Pradesh</option>
+							<option value="Madhya Pradesh">Madhya Pradesh</option>
+						</select>
+					</label>
+						<label>
+						Zip code
+						<input type="number" name="" maxlength="7" placeholder="Zip code" id="zipcode">
+					</label>
+                    <input type="submit" value="Ship To This Address" name="" id="btn">
+				</div>
+			</form>
+		</div>
+   
+</body>
+<script>
+    let form=document.getElementById("form")
+	let Alert=document.getElementById("alert")
+	let Alert2=document.getElementById("alert2")
+
+    form.addEventListener("submit",(e)=>{
+        e.preventDefault()	 
+		  
+		 if(form.fname.value==""&&form.lname.value==""&&form.adress.value==""&&form.mble.value==""&&form.city.value==""&&form.zipcode.value==""&&form.State.value==""){
+			Alert.innerText="Please fill the required fields!"
+			
+}
+else if(form.fname.value==""){
+	Alert.innerText="Please fill the First Name!"
+}
+else if(form.lname.value==""){
+	Alert.innerText="Please fill the Last Name!"
+}
+else if(form.adress.value==""){
+	Alert.innerText="Please fill the Adress!"
+}
+else if(form.mble.value==""){
+	Alert.innerText="Please fill the Mobile Number!"
+}
+else if(form.city.value==""){
+	Alert.innerText="Please fill the City Name!"
+}
+else if(form.zipcode.value==""){
+	Alert.innerText="Please fill the ZIp Code!"
+}
+else if(form.State.value==""){
+	Alert.innerText="Please fill the State Name"
+}
+else{
+     let year=new Date().getFullYear()
+	 console.log(year)
+	 let month=new Date().getMonth()+1
+	 console.log(month)
+	 let Day=new Date().getDate()
+	 console.log(Day)
+	let shippingData=[]
+//    form.addEventListener("submit", (e)=>{
+	 shippingData = JSON.parse(localStorage.getItem("customer")) || [];
+	// e.preventDefault()
+	let obj={
+		first_name:form.fname.value,
+	    last_name:form.lname.value,
+		address:form.adress.value,
+		mobile:form.mble.value,
+		city:form.city.value,
+		zip:form.zipcode.value,
+		state:form.State.value,
+		orderNumber:Math.floor(Math.random() * 1000000),
+		Date:Day+"/"+month+"/"+year
+	}
+	shippingData.push(obj)
+	//console.log(shippingData)
+	
+	localStorage.setItem("customer",JSON.stringify(shippingData))
+
+    // })
+
+	Alert.innerText=null
+	Alert2.innerText="Loading..."
+		setTimeout(()=>{
+			window.location.href = "payment.html";
+		},2000)
+    
+  }
+
+   
+   
+})
+</script>
+</html>

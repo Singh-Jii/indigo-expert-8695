@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    color:#31454e;
+}
+
+.mainContainer {
+    width: 100vw;
+    height: 100vh;
+    /* border: 5px solid purple; */
+    display: flex;
+}
+
+.navigator {
+    width: 20%;
+       background: #007ab8;
+    
+    /* border: 1px solid red; */
+}
+
+.navbar {
+    margin: auto;
+   
+    height: 100vh;
+    /* border: 1px solid red; */
+    
+}
+.logo{
+    border-radius: 10px;
+    overflow: hidden;
+}
+.logo>img {
+  width: 65%;
+    display: block;
+    margin: auto;
+    max-height: 200px;
+    border-radius: 40%;
+    border: #4d8585 solid 5px;
+    background-color:#e0edfe;
+
+}
+.links{
+    margin-top: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.links>a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px 50px;
+    /* border: 1px solid rgb(118, 118, 118); */
+}
+.links>a:hover{
+    background-color: white;
+    color: black;
+    border-right: 1px solid black;
+}
+.links>a:active{
+    background-color: black;
+    color: white;
+}
+.admin{
+    text-align: center;
+    font-size: 3rem;
+    border-bottom: 2px solid black;
+}
+.heading {
+    width: 25%;
+    /* padding-left: 3%; */
+    margin: auto;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    /* border-bottom: 2px solid black; */
+}
+
+.month_Chart {
+    width: 80%;
+    background-color: rgb(230, 230, 230);
+
+}
+
+.month_Chart>div {
+    width: 70%;
+    margin: auto;
+    height: 70vh;
+    /* border: 1px solid blue;  */
+}
+#myChart>div>div{
+    overflow: hidden;
+    border-radius: 2%;
+    background-color: rgb(230, 230, 230);
+}
+
+/* #table{
+   width: 100%;
+  
+}
+
+#table_Tr {
+    /* margin-top: 10px; */
+    
+    /* font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    margin: auto;
+  }
+  
+  #table_Tr td, #table_Tr th {
+    border: 1px solid white;
+    padding: 8px;
+    color: white;
+  }
+  
+  #table_Tr tr:nth-child{
+    background-color: white;
+}
+  
+  #table_Tr tr:hover {
+    background-color:gray;
+    color: #007ab8;
+    
+
+}
+#table_Tr tr{
+    background-color: #007ab8;
+}
+  
+  #table_Tr th {
+    padding-top: 29px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #007ab8;
+    color: white;
+  } */ 
+  table,
+td,
+th {
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+tr > th {
+  background-color: #007ab8;
+  color: white;
+}
+
+
+
+.notification{
+  display: none;
+  position: fixed;
+  top: 8%;
+  left: 45%;
+  width: 17%;
+  font-size: 23px;
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px;
+  background: rgba(0,0,0,0.8);
+  color: white;
+}

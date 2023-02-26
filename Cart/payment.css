@@ -1,0 +1,107 @@
+        *{padding:0; margin:0; box-sizing: border-box; font-family:sans-serif;}
+header{
+	width: 100vw;
+	min-height: 100vh;
+	background: #34495e;
+	font-size: 1.2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container{
+	background: white;
+	max-width: 800px;
+	min-height: 500px;
+	display: flex;
+	justify-content:space-between;
+	align-items: flex-start;
+	padding: 0.5rem 1.5rem;
+}
+.left{
+	flex-basis: 50%;
+}
+.right{
+	flex-basis: 50%;
+}
+form{
+	padding: 1rem;
+}
+
+h3{
+	margin-top: 1rem;
+	color:#2c3e50;
+	}
+
+form input[type="text"]{
+	width: 100%;
+	padding: 0.5rem 0.7rem;
+	margin: 0.5rem 0;
+	outline: none;
+}
+
+#year{
+	display: flex;
+	margin-top: 0.5rem;
+}
+#year select{
+	padding: 0.5rem 0.7rem;
+}
+#year input[type="number"]{
+	padding: 0.5rem 0.7rem;
+	margin-left: 5px;	
+}
+#month select{
+	padding: 0.5rem 0.7rem;
+	width: 100%;
+}
+#month input[type="text"]{
+	padding: 0.5rem 0.7rem;
+	margin-left: 5px;
+	font-size: medium;	
+}
+
+input[type="submit"]{
+	width: 100%;
+	padding: 0.7rem 1.5rem;
+	background: #34495e;
+	color: white;
+	border: none;
+	outline: none;
+	margin-top: 1rem;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover{
+	background: #2c3e50;
+}
+#pay_alert{
+	width: 80%;
+	color: rgb(212, 81, 81);
+	height: 30px;
+	text-align: center;
+	font-size: larger;
+	margin-bottom: 1%;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	
+
+}
+#pay_alert2{
+	width: 80%;
+	color: greenyellow;
+	text-align: center;
+	/* background-color: chartreuse; */
+	height: 30px;
+	font-size: larger;
+	margin-bottom: 1%;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+@media only screen and (max-width: 770px){
+	.container{
+		flex-direction: column;
+	}
+	body{
+		overflow-x: hidden;
+	}
+}
