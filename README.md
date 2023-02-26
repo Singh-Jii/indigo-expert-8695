@@ -36,3 +36,12 @@ For support, email -gentalman1945@gmail.com
 Contributions are always welcome!
 ## Authors
 -[Ramanjeet Singh](github.com/gzbsingh)
+ [Sabar Patel](github.com/saber003)
+ [Chandan Kumar Behara](https://github.com/chandankumar1425)
+ [Neelesh](https://github.com/Neelachari)
+## Linkedin
+-[Ramanjeet Singh](github.com/gzbsingh)
+ [Sabar Patel](https://www.linkedin.com/in/saber-patel-992ab814a/)
+ [Chandan Kumar Behara](https://www.linkedin.com/in/kaushikchandan6372/)
+ [Neelesh](https://www.linkedin.com/in/neelesh-n-h-2704a7196/)
+ 
