@@ -424,7 +424,7 @@
             <hr>
             <h2>Color +</h2>
             <hr>
-            <h2>Brand +</h2>
+            <h2 id="Brand">Brand +</h2>
             <hr>
             <h2>Free pickup +</h2>
             <hr>
@@ -557,8 +557,8 @@ document.querySelector("#price").addEventListener("click", pri)
     })
     displayData(fetchedData)
  }
- document.querySelector("#size").addEventListener("click", siz)
- function siz(){
+ document.querySelector("#Brand").addEventListener("click", brand)
+ function brand(){
     fetchedData.filter(function(a,b){
         return a.size-b.size
     })
@@ -623,7 +623,7 @@ document.querySelector("#price").addEventListener("click", pri)
         if (isPresent===true){
           alert("Product already in the cart");
         }else{
-          cartData.push(element);
+          cartData.push({...element,Quantity:1});
           localStorage.setItem("cart",JSON.stringify(cartData));
           alert("Product added to The cart");
         }
