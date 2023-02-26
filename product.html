@@ -88,7 +88,7 @@ a{
 #paymnt{
     height: 35px;
     /* border: 2px solid red; */
-    margin-left: 50px;
+    margin-left: 20px;
     margin-top: 13px;
 }
 
@@ -714,12 +714,12 @@ a{
     </div>
 
     <div class="logo">
-        <img src="./images/logo.png" alt="error" id="logo1">
+        <a href="./index.html"><img src="./images/logo.png" alt="error" id="logo1"></a>
         <div class="search">
         <input type="text" placeholder="Search FashionHub" name="search" style="border:none;width: 300px;"/>
         <input type="submit" value="Search"  id="search1" style="border: none;background-color:rgb(4, 77, 77) ;color: white; width: 100px;"/>
         </div>
-        <img src="./images/paymnt.jpg" alt="error" id="paymnt">
+        <a href="./cart.html"><img src="./images/paymnt.jpg" alt="error" id="paymnt" ></a>
     </div>
 
     <hr style="line-height: -0.8px;">
@@ -752,7 +752,7 @@ a{
     </div>
 
     <div class="drop_down">
-        <button class="drop_button">Clothing</button>
+        <button class="drop_button" onclick="product()">Clothing</button>
         <div class="dropdown_cont">
 
           <a href="#">Pants</a>
@@ -1311,7 +1311,9 @@ document.querySelector("#sortPrice").addEventListener("change",()=>{
 
 
 
-
+    function product(){
+   window.location.href="./product.html";
+}
  
 </script>
 

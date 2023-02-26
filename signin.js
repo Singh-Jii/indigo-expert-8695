@@ -40,7 +40,7 @@ headers: {
         if(email.value=="admin@gmail.com" && password.value=="Admin@1212" ){
           // alert("Welcome Admin")
           flag=true;
-          window.location.href="./index.html"
+          window.location.href="./Admin_Home.html"
         }
         if(email.value===e.email  && password.value ===e.Password){
           document.getElementById("heading").innerText="Sign in Successful";
@@ -88,7 +88,9 @@ let zipcode=document.getElementById("zipcode");
 
 let personData = [];
 document.getElementById("submit_btn").addEventListener("click", (e) => {
+
   e.preventDefault();
+  if(Name.value!="" && Email.value!="" && Password.value!="" && phone.value!="" && gender.value!="" && zipcode!=""){
   let obj = {
     name: Name.value,
     email: Email.value,
@@ -112,4 +114,8 @@ document.getElementById("submit_btn").addEventListener("click", (e) => {
    document.body.classList.add("popup-active")
 
   }))
+}
+else{
+  alert("Please Fill All Form");
+}
 })
