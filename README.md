@@ -35,6 +35,8 @@ For support, email -gentalman1945@gmail.com
 
 Contributions are always welcome!
 ## Authors
+[Lovely Singh](https://github.com/gzbsingh/Singh-Jii)
+
 -[Ramanjeet Singh](https://github.com/gzbsingh)
 
  [Sabar Patel](https://github.com/saber003)
@@ -43,11 +45,14 @@ Contributions are always welcome!
  
  [Neelesh](https://github.com/Neelachari)
 ## Linkedin
--[Ramanjeet Singh](github.com/gzbsingh)
+[Lovely Singh]
+-[Ramanjeet Singh](https://www.linkedin.com/in/ramanjeet-singh-212430190/)
 
  [Sabar Patel](https://www.linkedin.com/in/saber-patel-992ab814a/)
  
  [Chandan Kumar Behara](https://www.linkedin.com/in/kaushikchandan6372/)
  
  [Neelesh](https://www.linkedin.com/in/neelesh-n-h-2704a7196/)
+ 
+ 
  
