@@ -21,8 +21,8 @@ i{
     display: flex;
     border: rgb(228, 23, 23) 2px solid;
     background-color: whitesmoke;
-    /* margin-bottom: 20px; */
-    /* padding-top: 55px; */
+    margin-bottom: 20px;
+    padding-top: 55px;
     /* position: fixed; */
 }
 .choose{
