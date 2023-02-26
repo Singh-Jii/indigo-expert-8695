@@ -45,7 +45,8 @@ Contributions are always welcome!
  
  [Neelesh](https://github.com/Neelachari)
 ## Linkedin
-[Lovely Singh]
+[Lovely Singh](https://www.linkedin.com/in/lovely-kumari-86189a215)
+
 -[Ramanjeet Singh](https://www.linkedin.com/in/ramanjeet-singh-212430190/)
 
  [Sabar Patel](https://www.linkedin.com/in/saber-patel-992ab814a/)
