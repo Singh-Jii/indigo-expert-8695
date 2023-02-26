@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indigo</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="icon" type="image/png" href="./mainlogo.png"> -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="stick">
+        <p><i>FROCKS FULL OF SUNSHINE</i></p>
+        <p>these springs foavorites had us at yellow</p>
+        <a href="">shop the new collection</a>
+    </div>
+
+    <div class="select1">
+        <div>
+        <select name="English ($)" id="choose">
+            <option value="">English ($)</option>
+            <option value="">USD ($)</option>
+            <option value="">English</option>
+            <option value="">French</option>
+        </select>
+        </div>
+        <div>
+            <a href=""><p>Sign In/Sign Up</p></a>
+            <!-- <button id="open-popup-btn">Log In & Sign In</button> -->
+        </div>
+    </div>
+
+    <div class="logo">
+        <img src="./logo.png" alt="error" id="logo1">
+        <div class="search">
+        <input type="text" placeholder="Search FashionHub" name="search" style="border:none;width: 300px;"/>
+        <input type="submit" value="Search"  id="search1" style="border: none;background-color:rgb(4, 77, 77) ;color: white; width: 100px;"/>
+        </div>
+        <img src="./paymnt.jpg" alt="error" id="paymnt">
+    </div>
+
+    <hr style="line-height: -0.8px;">
+
+    <div class="nav">
+    <div class="drop_down" id="d">
+        <button class="drop_button">New!</button>
+        <div class="dropdown_cont">
+
+          <a href="#">Accessories</a>
+          <a href="#">Beauty & Wellness</a>
+          <a href="#">Clothing</a>
+          <a href="#">Dresses</a>
+          <a href="#">Jweleries</a>
+          <a href="#">Shoes</a>
+        </div>
+    </div>
+
+    <div class="drop_down">
+        <button class="drop_button">Dresses</button>
+        <div class="dropdown_cont">
+
+          <a href="#">Wedding Dresses</a>
+          <a href="#">Midi Dresses</a>
+          <a href="#">Bridesmaid Dresses</a>
+          <a href="#">Plus Dresses</a>
+          <a href="#">Formal Dresses</a>
+          <a href="#">Maxi Dresses</a>
+        </div>
+    </div>
+
+    <div class="drop_down">
+        <button class="drop_button">Clothing</button>
+        <div class="dropdown_cont">
+
+          <a href="#">Pants</a>
+          <a href="#">Shorts</a>
+          <a href="#">Skirts</a>
+          <a href="#">Sweaters</a>
+          <a href="#">Swimwears</a>
+          <a href="#">Jumpsuits</a>
+        </div>
+    </div>
+
+    <div class="drop_down">
+        <button class="drop_button">Shoes</button>
+        <div class="dropdown_cont">
+
+          <a href="#">Boots & Booties</a>
+          <a href="#">Flats</a>
+          <a href="#">Sandal</a>
+          <a href="#">Slippers</a>
+          <a href="#">Sneakers</a>
+          <a href="#">Shoes</a>
+        </div>
+    </div>
+
+    <div class="drop_down">
+        <button class="drop_button">Accessories</button>
+        <div class="dropdown_cont">
+
+          <a href="#">Hats</a>
+          <a href="#">Jweleries</a>
+          <a href="#">Scarves</a>
+          <a href="#">Socks & Tights</a>
+          <a href="#">Belts</a>
+          <a href="#">Bags</a>
+        </div>
+    </div>
+
+    <div class="drop_down">
+        <button class="drop_button">Weddings</button>
+        <div class="dropdown_cont">
+
+          <a href="#">Flower Girl Dresses</a>
+          <a href="#">Wedding Guest Dresses</a>
+          <a href="#">Plus</a>
+          <a href="#">Accessories</a>
+          <a href="#">Shoes</a>
+          <a href="#">Mother Of The Bride</a>
+        </div>
+    </div>
+
+    <div class="drop_down">
+        <button class="drop_button">Home & Furniture</button>
+        <div class="dropdown_cont">
+
+          <a href="#">Furnitures</a>
+          <a href="#">Kitchen & Dining</a>
+          <a href="#">Decor</a>
+          <a href="#">Stationary</a>
+          <a href="#">Outdoors</a>
+          <a href="#">Kids</a>
+        </div>
+    </div>
+
+    <div class="drop_down">
+        <button class="drop_button">Beauty & Wellness</button>
+        <div class="dropdown_cont">
+
+          <a href="#">Tools & Brushes</a>
+          <a href="#">Beauty & Wellness</a>
+          <a href="#">Suncare</a>
+          <a href="#">Makeup Kit</a>
+          <a href="#">Skincare</a>
+          <a href="#">Nails</a>
+        </div>
+    </div>
+
+    <div class="drop_down">
+        <button class="drop_button">Garden & Outdoor</button>
+        <div class="dropdown_cont">
+
+          <a href="#">Outdoor Living</a>
+          <a href="#">Furniture</a>
+          <a href="#">Plants & Flowers</a>
+          <a href="#">Planters</a>
+          <a href="#">Garden & Utilities</a>
+        </div>
+    </div>
+
+    <div class="drop_down">
+        <button class="drop_button">Gifts & Candles</button>
+        <div class="dropdown_cont">
+
+          <a href="#">Shop All Gifts</a>
+          <a href="#">Candle Gifts & Sets</a>
+          <a href="#">Gifts For The Home</a>
+          <a href="#">Personalized & Monogram Gifts</a>
+          <a href="#">Explore All Gifts & Candles</a>
+        </div>
+    </div>
+
+    <div class="drop_down">
+        <button class="drop_button">Sale</button>
+        <div class="dropdown_cont">
+
+          <a href="#">Shop All Sale</a>
+          <a href="#">Limited-Time Sale</a>
+          <a href="#">New Sale Styles</a>
+          <a href="#">Accessories</a>
+          <a href="#">Beauty & Wellness</a>
+          <a href="#">Clothing</a>
+        </div>
+    </div>
+    </div>
+
+    <hr>
+<!-- navbar completed here -->
+
+    <div class="pic1">
+        <a href=""><img src="https://images.ctfassets.net/5de70he6op10/12Fav7kMsNCFfp6IlqCoHg/ea5ea1b9ecc44d58249cd482bc3a580d/473929275-ls_m0_banner_f.jpg?w=630&q=80&fm=webp" alt="err" id="i1"></a>
+        <a href=""><img src="https://images.ctfassets.net/5de70he6op10/1yCt23d6XxdmkjGohde5ev/97f13874f53c019005210e6a690f3836/473929257-ls_m0_banner_a.jpg?w=630&q=80&fm=webp" alt="err"></a>
+        <a href=""><img src="https://images.ctfassets.net/5de70he6op10/6sUQEatinxFVFTiPZ2WGFG/a0deaee57126fbd5c17e9be6f3f107a1/473929265-ls_m0_banner_b.jpg?w=630&q=80&fm=webp" alt="err"></a>
+        <a href=""><img src="https://images.ctfassets.net/5de70he6op10/5KjWlD2oXag0PlTbafqAWL/2a4e32e4cfc0b818e4cda11687d1498b/473929283-ls_m0_banner_h.jpg?w=630&q=80&fm=webp" alt="err"></a>
+    </div>
+
+
+    <div class="shop">
+      <button><a href="">shop dresses</a></button>
+    </div>
+
+
+
+    <div class="three">
+      <div id="a1">
+      <button><a href="">shop new clothing</a></button>
+      </div>
+      <div id="a2">
+      <button><a href="">the getaway shop</a></button>
+      </div>
+      <div id="a3">
+      <button><a href="">shop swimwear</a></button>
+      </div>
+    </div>
+
+
+
+    <div class="four">
+        <div id="cp1">
+        <button><a href="">shop kitchen & dining</a></button>
+        </div>
+        <div id="cp2">
+        <button><a href="">shop furniture</a></button>
+        </div>
+    </div>
+
+
+
+    <div class="three1">
+      <div id="a11">
+      <button><a href="">shop spring entertaining essentials</a></button>
+      </div>
+      <div id="a22">
+      <button><a href="">shop tops</a></button>
+      </div>
+      <div id="a33">
+      <button><a href="">shop dresses</a></button>
+      </div>
+    </div>
+
+
+
+    <div class="shop1">
+      <button><a href="">shop weddings</a></button>
+    </div>
+
+
+
+
+    <div class="all">
+      <p>Top-Rated Picks</p>
+      <a href="">Shop All</a>
+    </div>
+
+
+    <hr style="margin-left: 40px;margin-right: 30px;">
+
+
+    <div class="f1">
+      <div class="f2">
+         <img src="https://images.ctfassets.net/5de70he6op10/1h9gkbrJB6rfKMEsrQsrlE/75fdaefe631d2d0e38d24b5e5d68ec10/473929238-ls_customerfave_a.jpg?w=630&q=80&fm=webp" alt="err">
+         <p class="p1">CUSTOMER  FAVORITE</p>
+         <h2>The Marais Chiffon Maxi Dress</h2>
+         <p>★★★★★</p>
+         <p class="p2">Love - I have this in three colors. Why? Because you can throw it on, and the fit is seamless, it’s comfy it’s breezy.</p>
+         <a href="">shop now</a>
+      </div>
+      <div class="f2">
+        <img src="https://images.ctfassets.net/5de70he6op10/2bvup8dYlhV23fJF8JWtBi/f007eb7c84134bfe87c3dd3669ffd06f/473929242-ls_customerfave_b.jpg?w=630&q=80&fm=webp" alt="err">
+        <p class="p1">CUSTOMER  FAVORITE</p>
+        <h2>The Super Mini Slouchy Bag</h2>
+        <p>★★★★★</p>
+        <p class="p2">Super cute, perfect little crossbody. Holds your phone, money, lipstick and keys.</p>
+        <a href="">shop now</a>
+      </div>
+      <div class="f2">
+        <img src="https://images.ctfassets.net/5de70he6op10/7e6CTKkxyvEGN65qcfAD6e/833ca12cd46657912e24e81a42fc086a/473929246-ls_customerfave_c.jpg?w=630&q=80&fm=webp" alt="err">
+        <p class="p1">CUSTOMER  FAVORITE</p>
+        <h2>The Bennet Buttondown Shirt</h2>
+        <p>★★★★★</p>
+        <p class="p2">Oversized in the best way...it's a perfect cotton shirt.</p>
+        <a href="">shop now</a>
+      </div>
+      <div class="f2">
+        <img src="https://images.ctfassets.net/5de70he6op10/IRIRM5boIBRZTPtM9RGo2/d5a954acdea330f877f48ee00b9dd9e7/473929254-ls_customerfave_d.jpg?w=630&q=80&fm=webp" alt="err">
+        <p class="p1">CUSTOMER  FAVORITE</p>
+        <h2>The Colette Wide-Leg Pants</h2>
+        <p>★★★★★</p>
+        <p class="p2">I LOVE THESE PANTS! They feel good on, whether I'm standing, sitting, or walking. Overall 10/10 would recommend!</p>
+        <a href="">shop now</a>
+      </div>
+    </div>
+
+
+
+    <h3 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-weight: lighter; margin-top: 50px; margin-left: 35px;">You May Also Like</h3>
+
+    <hr style="margin-left: 35px; margin-right: 35px;">
+
+
+
+
+
+    <div class="container2">
+      <div class="slider2">
+          <a href=""><img src="https://images.urbndata.com/is/image/Anthropologie/4123650590263_041_b2?$an-category$&qlt=80&fit=constrain" alt="">
+              
+              <p>The Margot Kick-Flare Cropped Pants</p></a>
+              <a href=""> <img src="https://images.urbndata.com/is/image/Anthropologie/4122900970110_010_b?$an-category$&qlt=80&fit=constrain" alt="">
+                  
+                  <p>The Denim Colette Cropped Wide-Leg Jeans</p></a>
+          <a><img src="https://images.urbndata.com/is/image/Anthropologie/4110095140065_010_b2?$an-category$&qlt=80&fit=constrain" alt="">
+              
+              <p>Pilcro Linen Henley Surf Shirt</p>
+          </a>
+          <a><img src="https://images.urbndata.com/is/image/Anthropologie/4122900970124_011_b2?$an-category$&qlt=80&fit=constrain" alt="">
+              
+              <p>The Kit High Rise Crop Jeans</p>
+          </a>
+          <a><img src="https://images.urbndata.com/is/image/Anthropologie/4112916210065_011_b2?$an-category$&qlt=80&fit=constrain" alt="">
+              
+              <p>By Anthropologie Babydoll Top</p>
+          </a>
+          <a><img src="https://images.urbndata.com/is/image/Anthropologie/4123942870006_055_b2?$an-category$&qlt=80&fit=constrain" alt="">
+              
+              <p>By Anthropologie Avalators Cargo Pants</p>
+          </a>
+          <a><img src="https://images.urbndata.com/is/image/Anthropologie/4112920170059_009_b2?$an-category$&qlt=80&fit=constrain" alt="">
+              
+              <p>Sarah Gorden Tiger Graphic Tee</p>
+          </a>
+          <a><img src="https://images.urbndata.com/is/image/Anthropologie/4123660650001_047_b2?$an-category$&qlt=80&fit=constrain" alt="">
+              
+              <p>Pilcro Smocked Romper</p>
+          </a>
+          <a><img src="https://images.urbndata.com/is/image/Anthropologie/4123650590179_237_b2?$an-category$&qlt=80&fit=constrain" alt="">
+              
+              <p>Maeve Wide-Leg Trousers</p>
+          </a>
+          <a><img src="https://images.urbndata.com/is/image/Anthropologie/4130370060133_018_b2?$an-category$&qlt=80&fit=constrain" alt="">
+              
+              <p>The Silverlake Flutter-Sleeve Dresses</p>
+          </a>    
+      </div>
+  </div>
+
+
+
+
+
+  <h3 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-weight: lighter; margin-top: 100px; margin-left: 35px;">Trending Now</h3>
+
+  <hr style="margin-left: 35px; margin-right: 35px;">
+
+
+
+  <div class="container2">
+    <div class="slider2">
+        <a href=""><img src="https://images.urbndata.com/is/image/Anthropologie/69899417_102_b2?$an-category$&qlt=80&fit=constrain" alt="">
+            
+            <p>Melie Bianco Brigitte Large Stachel</p></a>
+            <a href=""> <img src="https://images.urbndata.com/is/image/Anthropologie/4130340890037_266_b2?$an-category$&qlt=80&fit=constrain" alt="">
+                
+                <p>Vineet Bahl Embroided Long-Sleeve Dress</p></a>
+        <a><img src="https://images.urbndata.com/is/image/Anthropologie/4130638280267_034_b2?$an-category$&qlt=80&fit=constrain" alt="">
+            
+            <p>Farm Rio Puff-Sleeve Mini Dress</p>
+        </a>
+        <a><img src="https://images.urbndata.com/is/image/Anthropologie/4130646420009_079_b2?$an-category$&qlt=80&fit=constrain" alt="">
+            
+            <p>The Somerset Maxi Dress</p>
+        </a>
+        <a><img src="https://images.urbndata.com/is/image/Anthropologie/63317507_014_b2?$an-category$&qlt=80&fit=constrain" alt="">
+            
+            <p>Amsale Pryce Off-Shoulder Satin Column Gown</p>
+        </a>
+        <a><img src="https://images.urbndata.com/is/image/Anthropologie/4130097530245_011_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349" alt="">
+            
+            <p>Shoshanna Sleeveless Collared Dress</p>
+        </a>
+        <a><img src="https://images.urbndata.com/is/image/Anthropologie/51735363_049_b2?$an-category$&qlt=80&fit=constrain" alt="">
+            
+            <p>Elza Striped Dining Chair</p>
+        </a>
+        <a><img src="https://images.urbndata.com/is/image/Anthropologie/4130928210014_066_b2?$an-category$&qlt=80&fit=constrain" alt="">
+            
+            <p>Aureta Studio Puff-Sleeve Mini Dress</p>
+        </a>
+        <a><img src="https://images.urbndata.com/is/image/Anthropologie/4120943510001_049_b2?$an-category$&qlt=80&fit=constrain" alt="">
+            
+            <p>Sue Sartor Tiered Skirt</p>
+        </a>
+        <a><img src="https://images.urbndata.com/is/image/Anthropologie/81125858_011_b3?$an-category$&qlt=80&fit=constrain" alt="">
+            
+            <p>By Watters Macaron Square-Neck Tulle Embellished Mini Dress</p>
+        </a>    
+    </div>
+</div>
+
+
+
+
+<h3 style="font-size: x-large;font-weight: lighter; margin-top: 100px; margin-left: 665px;color: rgb(58, 50, 50);">More To Explore</h3>
+
+  <hr style="margin-left: 28px; margin-right: 28px;">
+
+
+
+
+
+  <div class="divi">
+    <div class="divi1">
+       <img src="https://images.ctfassets.net/5de70he6op10/1Th4OWf9mWwZ5CZ8SQVxvp/eb5e76d1b3573ce5929ec9d44c6ef5bd/MTE_1.jpg?w=856&q=80&fm=webp" alt="">
+       <h2>Good Jeans: The Denim Fit Guide</h2>
+       <p>Introducing the perfect pairs for every wear. From rise to size, here's how to find your new favorite jeans.</p>
+       <a href="">find your fit</a>
+    </div>
+    <div class="divi1">
+      <img src="https://images.ctfassets.net/5de70he6op10/5WIsO3hQfTDgsRbgTRuL1C/7f94871142c50d9ac7ed25e3afe8be92/469633343-020623_hpg_mte_2.jpg?w=856&q=80&fm=webp" alt="">
+      <h2>2023 | routine refresh</h2>
+      <p>From fresh-faced skincare formulas to floral-inflected fragrances to now-trending nails, we have everything you need.</p>
+      <a href="">get into the swing of string</a>
+    </div>
+    <div class="divi1">
+      <img src="https://images.ctfassets.net/5de70he6op10/6i8iGrDlh9MWYQ5Za3Ifb8/b3bb93892619d7317eaffc08861f5b60/473929355-mte_3.jpg?w=856&q=80&fm=webp" alt="">
+       <h2>Spring 2023: Pattern + Texture</h2>
+       <p>Blurring the lines of indoors and out, our Spring 2023 collection fits naturally into the 1953 residence of landscape-architect James Rose.</p>
+       <a href="">take the full house tour</a>
+    </div>
+  </div>
+
+
+
+
+<hr style="margin-top: 60px; margin-left: 26px; margin-right: 30px;">
+<h3 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: lighter;margin-left: 26px;">About Us</h3>
+<div class="para6">
+<p class="para4">Our mission at Anthropologie has always been to surprise and delight you with unexpected, distinctive finds for your closet and home. We source and craft all of our products with care, ensuring that any treasure you find at Anthropologie is unique, just like you. Explore our <a href="">dresses</a> shop to find styles and fits perfect for any occasion, from <a href="">cocktail party dresses</a> to <a href="">wedding guest dresses</a> to <a href="">casual daytime</a> silhouettes. Shop BHLDN and take a look at our selection of <a href="">wedding dresses</a> and <a href="">bridesmaids dresses</a>. Browse <a href="">party skirts</a>, <a href="">wide-leg pants</a> and <a href="">jeans</a>, and <a href="">blouses</a> that will turn heads. Complete your look with uncommon accessories—think only-here <a href="">slides</a> and head-turning <a>totes</a>. Discover our expansive home collections, from <a href="">furniture</a> to <a href="">curtains</a>, <a href="">decorative pillows</a> to <a href="">duvets</a>, <a>wall art</a> to <a href="">Moroccan-inspired rugs</a>. Looking for a <a href="">housewarming gift</a>? Try a <a href="">coffee table book</a>, original <a href="">glassware</a> or a set of <a href="">coasters</a>.
+</p>
+</div>
+
+
+<div class="main-footer" style="background-color: whitesmoke;">
+
+<div class="footer1">
+  <div>
+    <h3 style="font-weight: lighter; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;width: 90%;">Sign Up for Email</h3>
+    <p style="color: rgb(86, 80, 86);">Receive early access to new arrivals, sales, exclusive content, events and much more!</p>
+  </div>
+  <div>
+    <p>Email Address*</p>
+    <input type="text number" style="width: 350px;height: 40px;">
+    <button style="width: 100px;height: 46px;color: white;background-color: rgb(25, 4, 47);">Submit</button>
+  </div>
+</div>
+<div style="background-color: whitesmoke;">
+  <p style="margin-left: 150px;font-size: 15px;">By signing up, you will receive Anthropologie offers, promotions and other commercial messages. You are also agreeing to Anthropologie’s <a href="" style="color: teal;margin-left: 0px;">Privacy Policy</a>. You may unsubscribe at any time.</p>
+</div>
+
+<hr>
+
+
+
+
+<div style="display: flex;width: 100%;" class="style1">
+  <div>
+     <p>Help</p>
+     <div><a href="">Track Your Order</a></div>
+     <div><a href="">Start A Return Or Exchange (US + CA)</a></div>
+     <div><a href="">Returns & Exchanges</a></div>
+     <div><a href="">Shipping</a></div>
+     <div><a href="">Customer Service</a></div>
+     <div><a href="">Current Promotions</a></div>
+     <div><a href="">Product Recalls</a></div>
+  </div>
+  <div>
+    <p>About Us</p>
+      <div><a href="">Our Story</a></div>
+      <div><a href="">Events</a></div>
+      <div><a href="">A Greater Good</a></div>
+      <div><a href="">Diversity & Inclusion</a></div>
+      <div><a href="">Stories</a></div>
+  </div>
+  <div>
+      <p>Services</p>
+      <div><a href="">AnthroPerks</a></div>
+      <div><a href="">Gift Cards</a></div>
+      <div><a href="">AnthroLiving Designer & Trade Program</a></div>
+      <div><a href="">Furniture: Guides & Services</a></div>
+      <div><a href="">Store Pickup & Collection Points</a></div>
+      <div><a href="">Klarna</a></div>
+  </div>
+  <div>
+      <p>Connect</p>
+      <div><a href="">Stay Connected</a></div>
+      <div><a href="">Careers</a></div>
+      <div><a href="">Styling Services</a></div>
+      <div><a href="">Request A Catalog</a></div>
+  </div>
+  <div>
+      <div style="margin-top: 50px;"><a href="">Store Locator</a></div>
+      <div><a href="">Get Email</a></div>
+  </div>
+</div>
+
+
+<div style="height: 400px;"></div>
+
+<div style="height: 50px;">
+  <img src="https://images.ctfassets.net/5de70he6op10/4gWq1G4qLLgmqlNeHfzV2T/55298745127c36c5876f4013434c0c37/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917_Copy_2.svg" alt="" style="margin-left: 550px;">
+  <a href=""><img src="./p.jpg" alt="" style="margin-bottom: 2px;"></a>
+  <a href="" style="margin-left: 20px;margin-top: 30px;"><img src="./i.jpg" alt=""></a>
+  <a href="" style="margin-left: 20px;"><img src="./f.jpg" alt="" style="margin-bottom: 2px;"></a>
+  <a href="" style="margin-left: 20px;margin-bottom: 20px;"><img src="./t.jpg" alt="" style="margin-bottom: 2px;"></a>
+
+</div>
+<div>
+  <img src="https://images.ctfassets.net/5de70he6op10/6nrsoJocqQ4U6eqiU4Co20/8e677777fc39ddfb8d739978b79515d3/020123_AnthroPerksLaunch_SiteFooter_LS.jpg" alt="" width="95%" style="margin-left: 39px;">
+</div>
+
+<div style="margin-top: 60px;" id="us">
+  <a href=""  style="color: black;font-weight: lighter; margin-left: 650px;">US | France | Germany | Italy | Spain | UK</a>
+</div>
+
+
+<div class="pri">
+  <div>
+  <a href="">Privacy Policy</a>
+  <a href="">Terms of Use</a>
+  <a href="">CA Transparency</a>
+  <a href="">Accessibility</a>
+  <a href="">URBN.com</a>
+  <a href="">For CA Residents</a>
+  </div>
+  <div>
+  <p>2023 URBN.com. All Rights Reserved </p>
+  </div>
+</div>
+
+</div>
+
+    
+
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.6.3.min.js"
+  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript">
+      $('.slider2').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1
+});
+
+var filtered = false;
+
+$('.js-filter').on('click', function(){
+  if (filtered === false) {
+    $('.filtering').slick('slickFilter',':even');
+    $(this).text('Unfilter Slides');
+    filtered = true;
+  } else {
+    $('.filtering').slick('slickUnfilter');
+    $(this).text('Filter Slides');
+    filtered = false;
+  }
+});
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</html>

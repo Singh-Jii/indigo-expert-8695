@@ -1,0 +1,854 @@
+i{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    margin-left: 380px;
+    margin-right: 40px;
+}
+.stick{
+    display: flex;
+    height: 50px;
+    background-color:rgb(2, 63, 63);
+    color: white;
+    /* position: fixed; */
+    /* width: 99%; */
+}
+.stick p{
+  margin-top: 15px;
+
+}
+.stick a{
+    color: white;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+.select1{
+    display: flex;
+    /* border: black 1px solid; */
+    background-color: whitesmoke;
+    /* margin-bottom: 20px; */
+    /* padding-top: 55px; */
+    /* position: fixed; */
+}
+.lovely{
+    margin-top: 15px;
+    margin-left:1260px;
+    margin-right: 20px;
+    /* border: 2px red solid; */
+    height: fit-content;
+}
+.select1 div:nth-child(1) select{
+    border: none;
+    background-color: whitesmoke;
+    color: rgb(5, 107, 107);
+    /* border: 1px solid black; */
+}
+.select1 div:nth-child(2) p{
+    color: rgb(5, 107, 107);
+    background-color: whitesmoke;
+    margin-top: -3px;
+}
+.select1 div a{
+    text-decoration: none;
+}
+.logo{
+    display: flex;
+    /* position: fixed; */
+}
+#logo1{
+    height: 50px;
+    width: 230px;
+    /* border: 2px solid red; */
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 4px;
+    margin-bottom: 2px;
+}
+.search{
+    display: flex;
+    height: 35px;
+    margin-left: 620px;
+    border: 2px rgb(21, 151, 151) solid;
+    width: 399x;
+    border-radius: 4px;
+    margin-top: 13px;
+    /* border: red 2px solid; */
+
+}
+#paymnt{
+    height: 35px;
+    /* border: 2px solid red; */
+    margin-left: 50px;
+    margin-top: 13px;
+}
+
+
+
+/* .nav{ */
+  /* position: fixed; */
+  /* border: 2px blue solid; */
+/* } */
+.drop_button {
+    background-color: white;
+    color: black;
+    padding: 16px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .drop_down {
+    /* position: relative; */
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown_cont {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown_cont a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown_cont a:hover {
+      background-color:whitesmoke;
+      color: teal;
+      text-decoration: underline;
+  
+  }
+  
+  /* Show the dropdown menu on hover */
+  .drop_down:hover .dropdown_cont {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .drop_down:hover .drop_button {
+    background-color: whitesmoke;
+    color: teal;
+  }
+  #d{
+      margin-left: 30px;
+  }
+
+  .pic1{
+       display: flex;
+       /* margin-left: 40px; */
+       /* border: 2px solid rgb(227, 18, 18); */
+  }
+
+  .pic1 a img{
+    width: 353px;
+    margin-right: -50px;
+    margin-left: 50px;
+    /* margin: auto; */
+    margin-top: 30px;
+  }
+
+
+  
+
+  .shop{
+    background-image: url("./dr.jpg");
+    height: 650px;
+    width: 95%;
+    margin-left: 40px;
+    margin-top: 30px;
+    /* border: 2px red solid; */
+  }
+  .shop button{
+    width: 150px;
+    height: 45px;
+    margin-top: 595px;
+    margin-left:653px ;
+    border: none;
+    /* border: 7px solid rgb(110, 19, 152); */
+  }
+  .shop button a{
+    color: black;
+    margin-left: -2px;
+    text-decoration: none;
+  }
+  .shop button a:hover{
+    text-decoration: underline;
+  }
+
+
+
+
+
+
+
+
+
+
+ 
+  .three{
+    display: flex;
+    margin-top: 25px;
+  }
+  #a1{
+    background-image: url("./b1.jpg");
+    width: 30%;
+    margin-left: 40px;
+    height: 667px;
+    margin-right: 37px;
+    /* border: none; */
+    /* text-decoration: none; */
+  }
+
+  #a2{
+    width:30%;
+    height: 667px;
+    background-image: url("./b2.jpg");
+    margin-right: 37px;
+    /* border: none; */
+    /* text-decoration: none; */
+  }
+
+  #a3{
+     background-image: url("./b3.jpg");
+     width: 30%;
+     height: 666px;
+     /* border: none; */
+     /* text-decoration: none; */
+  }
+  #a1 button a{
+    text-decoration: none;
+    color: black;
+    margin-right: 45px
+  }
+  #a1 button a:hover{
+    text-decoration: underline;
+  }
+  #a2 button a{
+    text-decoration: none;
+    color: black;
+    margin-right: 45px;
+  }
+  #a2 button a:hover{
+    text-decoration: underline;
+  }
+  #a3 button a{
+    text-decoration: none;
+    color: black;
+    margin-right: 45px;
+    /* height: 50px; */
+  }
+  #a3 button a:hover{
+    text-decoration: underline;
+  }
+  #a1 button{
+    margin-left: 25%;
+    margin-top: 609px;
+    height: 40px;
+    width: 220px;
+    border: none;
+  }
+  #a2 button{
+    margin-left: 25%;
+    margin-top: 608px;
+    height: 40px;
+    width: 220px;
+    border: none;
+  }
+  #a3 button{
+    margin-left: 25%;
+    margin-top: 606px;
+    height: 40px;
+    border: none;
+    width: 220px;
+  }
+
+
+
+
+
+  .four{
+    display: flex;
+  }
+  #cp1{
+    background-image: url("./food.jpg");
+    width: 700px;
+    height: 650px;
+    margin-right: 28px;
+    margin-left: 40px;
+    margin-top: 25px;
+  }
+  #cp2{
+    background-image: url("./fur.jpg");
+    width: 700px;
+    margin-top: 25px;
+    height: 650px;
+  }
+  #cp1 button{
+    margin-top: 589px;
+    margin-left: 255px;
+    height: 40px;
+    border: none;
+  }
+  #cp2 button{
+    margin-top: 589px;
+    margin-left: 274px;
+    height: 40px;
+    border: none;
+  }
+  #cp1 button a{
+    color: black;
+    margin-right: 55px;
+    text-decoration: none;
+  }
+  #cp1 button a:hover{
+    text-decoration: underline;
+  }
+  #cp2 button a{
+    color: black;
+    margin-right: 55px;
+    text-decoration: none;
+  }
+  #cp2 button a:hover{
+    text-decoration: underline;
+  }
+
+
+
+
+  .three1{
+    display: flex;
+    margin-top: 25px;
+  }
+  #a11{
+    background-image: url("./c1.jpg");
+    width: 30%;
+    margin-left: 40px;
+    height: 667px;
+    margin-right: 37px;
+    /* border: none; */
+    /* text-decoration: none; */
+  }
+
+  #a22{
+    width:30%;
+    height: 667px;
+    background-image: url("./c2.jpg");
+    margin-right: 37px;
+    /* border: none; */
+    /* text-decoration: none; */
+  }
+
+  #a33{
+     background-image: url("./c3.jpg");
+     width: 30%;
+     height: 666px;
+     /* border: none; */
+     /* text-decoration: none; */
+  }
+  #a11 button a{
+    text-decoration: none;
+    color: black;
+    margin-right: 22px;
+    margin-left:15px;
+  }
+  #a11 button a:hover{
+    text-decoration: underline;
+  }
+  #a22 button a{
+    text-decoration: none;
+    color: black;
+    margin-right: 45px;
+  }
+  #a22 button a:hover{
+    text-decoration: underline;
+  }
+  #a33 button a{
+    text-decoration: none;
+    color: black;
+    margin-right: 45px;
+    /* height: 50px; */
+  }
+  #a33 button a:hover{
+    text-decoration: underline;
+  }
+  #a11 button{
+    margin-left: 21%;
+    margin-top: 611px;
+    height: 40px;
+    width: 290px;
+    border: none;
+  }
+  #a22 button{
+    margin-left: 25%;
+    margin-top: 611px;
+    height: 40px;
+    width: 220px;
+    border: none;
+  }
+  #a33 button{
+    margin-left: 25%;
+    margin-top: 610px;
+    height: 40px;
+    border: none;
+    width: 220px;
+  }
+
+
+
+
+
+
+  .shop1{
+    background-image: url("./piku.jpg");
+    height: 650px;
+    width: 95%;
+    margin-left: 40px;
+    margin-top: 30px;
+    /* border: 2px red solid; */
+  }
+  .shop1 button{
+    width: 153px;
+    height: 45px;
+    margin-top: 595px;
+    margin-left:649px ;
+    border: none;
+    /* border: 1px solid rgb(110, 19, 152); */
+  }
+  .shop1 button a{
+    color: black;
+    margin-left: -2px;
+    text-decoration: none;
+  }
+  .shop1 button a:hover{
+    text-decoration: underline;
+  }
+
+
+
+
+  .all{
+    display: flex;
+  }
+  .all a{
+    color: teal;
+    font-size: small;
+    margin-top: 37px;
+    text-decoration: none;
+  }
+  .all a:hover{
+    text-decoration: underline;
+  }
+  .all p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 40px;
+    margin-top: 35px;
+    margin-right: 1230px;
+  }
+
+
+
+
+
+  .f1{
+    display: flex;
+    /* border: 2px red solid; */
+    margin-top: 35px;
+  }
+  .f2{
+    /* border: 2px green solid; */
+    width: 22%;
+    margin-left: 38px;
+    /* margin-top: 35px; */
+  }
+  .f2 img{
+    width: 100%;
+    /* border: 4px purple solid; */
+    margin-bottom: 10px;
+  }
+  .f2 h2{
+    font-weight: lighter;
+    color: rgb(58, 50, 50);
+  }
+  .p1{
+    font-size: smaller;
+    color: rgb(58, 50, 50);
+    /* margin-top: 10px; */
+  }
+  .p2{
+    color: rgb(58, 50, 50);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .f2 a{
+    color: teal;
+    margin-left: 0px;
+    /* border:3px solid blue ; */
+  }
+  .f2 a:hover{
+    text-decoration: none;
+  }
+
+
+
+
+
+
+  .container2 div{
+    /* background-color: black; */
+    width: 96%;
+    margin: auto;
+    /* background-color: #a72112; */
+    margin-top: 20px;
+    
+   }
+   
+   .container2 button{
+    background-color: rgb(0, 0, 0);
+    border: 10%;
+    /* padding: 1%; */
+    margin-right: 3%;
+    margin-left: 2%;
+   }
+   .container2 button:hover{
+    background-color: black;
+   }
+   .slider2 img{
+    display: block;
+    /* border: 1px solid black; */
+    width: 95%;
+    /* margin-right: 40px; */
+   }
+   .slider2 a{
+    width: 100%;
+    margin-left: 10px;
+    margin: auto;
+   }
+   .slider2 a p{
+    color: rgb(58, 50, 50);
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: lighter;
+      font-size: 15px;
+   }
+   .slider2 a p:hover {
+    color:teal;
+   }
+
+
+
+
+
+   .divi{
+    /* border: 2px black solid; */
+    display: flex;
+    margin-top: 30px;
+   }
+   .divi1{
+    /* border: 2px purple solid; */
+    width: 80%;
+    margin-right: 20px;
+    margin-left: 20px;
+    /* margin-top: 20px; */
+   }
+   .divi1 img{
+    width: 100%;
+   }
+   .divi1 h2{
+    font-weight: lighter;
+    color: rgb(58, 50, 50);
+   }
+   .divi1 p{
+    font-weight: lighter;
+    color: rgb(58, 50, 50);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   }
+   .divi1 a{
+    color: teal;
+    margin-left: 0px;
+   }
+   .divi1 a:hover{
+    text-decoration: none;
+   }
+
+
+   .para6{
+    /* border: 2px purple solid; */
+    width: 97%;
+    margin-left: 22px;
+    /* line-height: 0px; */
+   }
+   
+   .para4 a{
+    color: teal;
+    /* border:  2px red solid; */
+    margin-left: 0px;
+    /* list-style: 0px; */
+   }
+   .para4 a:hover{
+    text-decoration: none;
+   }
+
+
+
+
+
+
+
+.footer1{
+  display: flex;
+  /* border: 2px purple solid; */
+  background-color: whitesmoke;
+  margin-top: 40px;
+}
+.footer1 div{
+  /* border: 2px red solid; */
+  margin-left: 150px;
+  background-color: whitesmoke;
+}
+
+
+  .style1{
+    /* border: blue 2px solid; */
+    background-color: whitesmoke;
+  }
+  .style1 div{
+    /* border: red 2px solid; */
+    width: 70%;
+    height: 30px;
+    margin-left: 28px;
+    margin-right: 40px;
+    margin-bottom: 15px;
+    background-color: whitesmoke;
+  }
+  .style1 div p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 110px;
+    background-color: whitesmoke;
+  }
+  .style1 div div a{
+    /* margin-left: -140px; */
+    color: black;
+    margin-left: 0px;
+    font-weight: lighter;
+    text-decoration: none;
+    background-color: whitesmoke;
+  }
+  .style1 div div a:hover{
+    text-decoration: underline;
+  }
+  .style1 div div{
+    margin-left: 110px;
+    background-color: whitesmoke;
+  }
+  #us a{
+    text-decoration: none;
+  }
+  #us a:hover{
+    text-decoration: underline;  
+  }
+ .pri{
+  margin-top: 60px;
+  display: flex;
+ }
+  .pri a{
+    color: teal;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: small;
+    margin-left: 8px;
+
+  }
+  .pri a:nth-child(6){
+    color: black;
+    margin-right: 710px;
+  }
+  .pri a:hover{
+    text-decoration: underline;
+  }
+  .pri div p{
+    margin-top: 0px;
+    /* border: 3px black solid; */
+  }
+
+
+
+
+
+/* medium screen */
+  @media all and (min-width:768px) and (max-width:1024px) {
+
+    .stick{
+      display: flex;
+      background-color:rgb(2, 63, 63);
+      color: white;
+      flex-direction: column;
+      /* position: fixed; */
+      /* width: 99%; */
+  }
+  .select1{
+      display: flex;
+      /* border: black 1px solid; */
+      flex-direction: column;
+      background-color: whitesmoke;
+      /* margin-bottom: 20px; */
+      /* padding-top: 55px; */
+      /* position: fixed; */
+  }
+  .search{
+      display: flex;
+      height: 35px;
+      margin-left: 620px;
+      border: 2px rgb(21, 151, 151) solid;
+      flex-direction: column;
+      width: 399x;
+      border-radius: 4px;
+      margin-top: 13px;
+      /* border: red 2px solid; */
+  
+  }
+  .pic1{
+      display: flex;
+      /* border: 2px solid black; */
+      flex-direction: column;
+  }
+  .three{
+      display: flex;
+      margin-top: 25px;
+      flex-direction: column;
+    }
+    .four{
+      display: flex;
+      flex-direction: column;
+    }
+    .three1{
+      display: flex;
+      margin-top: 25px;
+      flex-direction: column;
+    }
+  
+    .all{
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .f1{
+      display: flex;
+      /* border: 2px red solid; */
+      margin-top: 35px;
+      flex-direction: column;
+    }
+    .divi{
+      /* border: 2px black solid; */
+      display: flex;
+      margin-top: 30px;
+      flex-direction: column;
+     }
+     .footer1{
+      display: flex;
+      /* border: 2px purple solid; */
+      background-color: whitesmoke;
+      margin-top: 40px;
+      flex-direction: column;
+    }
+    .pri{
+      margin-top: 60px;
+      display: flex;
+      flex-direction: column;
+     }
+    
+    
+      
+  }
+/* small screen */
+  @media all and (min-width:320px) and (max-width:767px) {
+
+    .stick{
+      display: flex;
+      background-color:rgb(2, 63, 63);
+      color: white;
+      flex-direction: column;
+      /* position: fixed; */
+      /* width: 99%; */
+  }
+  .select1{
+      display: flex;
+      /* border: black 1px solid; */
+      flex-direction: column;
+      background-color: whitesmoke;
+      /* margin-bottom: 20px; */
+      /* padding-top: 55px; */
+      /* position: fixed; */
+  }
+  .search{
+      display: flex;
+      height: 35px;
+      margin-left: 620px;
+      border: 2px rgb(21, 151, 151) solid;
+      flex-direction: column;
+      width: 399x;
+      border-radius: 4px;
+      margin-top: 13px;
+      /* border: red 2px solid; */
+  
+  }
+  .pic1{
+      display: flex;
+      /* border: 2px solid black; */
+      flex-direction: column;
+  }
+  .three{
+      display: flex;
+      margin-top: 25px;
+      flex-direction: column;
+    }
+    .four{
+      display: flex;
+      flex-direction: column;
+    }
+    .three1{
+      display: flex;
+      margin-top: 25px;
+      flex-direction: column;
+    }
+  
+    .all{
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .f1{
+      display: flex;
+      /* border: 2px red solid; */
+      margin-top: 35px;
+      flex-direction: column;
+    }
+    .divi{
+      /* border: 2px black solid; */
+      display: flex;
+      margin-top: 30px;
+      flex-direction: column;
+     }
+     .footer1{
+      display: flex;
+      /* border: 2px purple solid; */
+      background-color: whitesmoke;
+      margin-top: 40px;
+      flex-direction: column;
+    }
+    .pri{
+      margin-top: 60px;
+      display: flex;
+      flex-direction: column;
+     }
+    
+    
+  }
+    
+  
