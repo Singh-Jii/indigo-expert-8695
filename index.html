@@ -40,7 +40,7 @@
          </div>
         <div class="popup-overlay"></div>
         <div class="popup">
-           <div class="logoset"><img src="./logo.png" alt=""></div>
+           <div class="logoset"><img src="./images/logo.png" alt=""></div>
           <div id="signin">
           <h3 id="heading">Email Id and Password</h3>
           <h5 id="empty"></h5>
@@ -58,7 +58,7 @@
         <div class="set" id="registerform">
         
           <div id="signup">
-            <div class="logoset1"><img src="./logo.png" alt=""></div>
+            <div class="logoset1"><img src="images/logo.png" alt=""></div>
             <h2 class="h2">Register Here</h2>
             <div id="fill1"></div>
             <div id="fill2"></div>
@@ -79,12 +79,12 @@
     </div>
 
     <div class="logo">
-        <a href="index.html"><img src="./logo.png" alt="error" id="logo1"></a>
+        <a href="index.html"><img src="images/logo.png" alt="error" id="logo1"></a>
         <div class="search">
         <input type="text" placeholder="Search FashionHub" name="search" style="border:none;width: 300px;"/>
         <input type="submit" value="Search"  id="search1" style="border: none;background-color:rgb(4, 77, 77) ;color: white; width: 100px;"/>
         </div>
-       <a href="cart.html"> <img src="./paymnt.jpg" alt="error" id="paymnt"></a>
+       <a href="cart.html"> <img src="images/paymnt.jpg" alt="error" id="paymnt"></a>
     </div>
 
     <hr style="line-height: -0.8px;">
@@ -96,7 +96,7 @@
 
           <a href="#">Accessories</a>
           <a href="#">Beauty & Wellness</a>
-          <a href="#">Clothing</a>
+          <a href="./product.html">Clothing</a>
           <a href="#">Dresses</a>
           <a href="#">Jweleries</a>
           <a href="#">Shoes</a>
@@ -117,7 +117,7 @@
     </div>
 
     <div class="drop_down">
-        <button class="drop_button">Clothing</button>
+        <button class="drop_button" onclick="product()">Clothing</button>
         <div class="dropdown_cont">
 
           <a href="#">Pants</a>
@@ -227,7 +227,7 @@
           <a href="#">New Sale Styles</a>
           <a href="#">Accessories</a>
           <a href="#">Beauty & Wellness</a>
-          <a href="#">Clothing</a>
+          <a href="./product.html">Clothing</a>
         </div>
     </div>
     </div>
@@ -556,10 +556,10 @@
 
 <div style="height: 50px;">
   <img src="https://images.ctfassets.net/5de70he6op10/4gWq1G4qLLgmqlNeHfzV2T/55298745127c36c5876f4013434c0c37/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917_Copy_2.svg" alt="" style="margin-left: 550px;">
-  <a href=""><img src="./p.jpg" alt="" style="margin-bottom: 2px;"></a>
-  <a href="" style="margin-left: 20px;margin-top: 30px;"><img src="./i.jpg" alt=""></a>
-  <a href="" style="margin-left: 20px;"><img src="./f.jpg" alt="" style="margin-bottom: 2px;"></a>
-  <a href="" style="margin-left: 20px;margin-bottom: 20px;"><img src="./t.jpg" alt="" style="margin-bottom: 2px;"></a>
+  <a href=""><img src="./images/p.jpg" alt="" style="margin-bottom: 2px;"></a>
+  <a href="" style="margin-left: 20px;margin-top: 30px;"><img src="./images/i.jpg" alt=""></a>
+  <a href="" style="margin-left: 20px;"><img src="./images/f.jpg" alt="" style="margin-bottom: 2px;"></a>
+  <a href="" style="margin-left: 20px;margin-bottom: 20px;"><img src="./images/t.jpg" alt="" style="margin-bottom: 2px;"></a>
 
 </div>
 <div>
@@ -614,6 +614,9 @@ $('.js-filter').on('click', function(){
     filtered = false;
   }
 });
+function product(){
+   window.location.href="/product.html";
+}
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </html>

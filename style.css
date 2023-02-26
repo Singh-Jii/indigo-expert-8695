@@ -160,7 +160,7 @@ i{
   
 
   .shop{
-    background-image: url("./dr.jpg");
+    background-image: url("./images/dr.jpg");
     height: 650px;
     width: 95%;
     margin-left: 40px;
@@ -199,7 +199,7 @@ i{
     margin-top: 25px;
   }
   #a1{
-    background-image: url("./b1.jpg");
+    background-image: url("./images/b1.jpg");
     width: 30%;
     margin-left: 40px;
     height: 667px;
@@ -211,14 +211,14 @@ i{
   #a2{
     width:30%;
     height: 667px;
-    background-image: url("./b2.jpg");
+    background-image: url("./images/b2.jpg");
     margin-right: 37px;
     /* border: none; */
     /* text-decoration: none; */
   }
 
   #a3{
-     background-image: url("./b3.jpg");
+     background-image: url("./images/b3.jpg");
      width: 30%;
      height: 666px;
      /* border: none; */
@@ -279,7 +279,7 @@ i{
     display: flex;
   }
   #cp1{
-    background-image: url("./food.jpg");
+    background-image: url("./images/food.jpg");
     width: 700px;
     height: 650px;
     margin-right: 28px;
@@ -287,7 +287,7 @@ i{
     margin-top: 25px;
   }
   #cp2{
-    background-image: url("./fur.jpg");
+    background-image: url("./images/fur.jpg");
     width: 700px;
     margin-top: 25px;
     height: 650px;
@@ -329,7 +329,7 @@ i{
     margin-top: 25px;
   }
   #a11{
-    background-image: url("./c1.jpg");
+    background-image: url("./images/c1.jpg");
     width: 30%;
     margin-left: 40px;
     height: 667px;
@@ -341,14 +341,14 @@ i{
   #a22{
     width:30%;
     height: 667px;
-    background-image: url("./c2.jpg");
+    background-image: url("./images/c2.jpg");
     margin-right: 37px;
     /* border: none; */
     /* text-decoration: none; */
   }
 
   #a33{
-     background-image: url("./c3.jpg");
+     background-image: url("./images/c3.jpg");
      width: 30%;
      height: 666px;
      /* border: none; */
@@ -408,7 +408,7 @@ i{
 
 
   .shop1{
-    background-image: url("./piku.jpg");
+    background-image: url("./images/piku.jpg");
     height: 650px;
     width: 95%;
     margin-left: 40px;
