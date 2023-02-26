@@ -9,15 +9,22 @@
     <link rel="stylesheet" href="./style/navbar.css">
     <link rel="stylesheet" href="./style/footer.css">
     <link rel="stylesheet" href="./style/backgroud.css">
-    <link rel="icon" type="image/png" href="/mainlogo.png">
+
     <script src="https://kit.fontawesome.com/38439e7720.js" crossorigin="anonymous"></script>
     <style>
-        #upper{
+        /* #upper{
             border: 1px solid blue;
+        } */
+
+        /* #browseBy{
+            border: 3px solid rgb(227, 27, 60);
+        } */
+        p {
+            font-family: Arial, Helvetica, sans-serif;
         }
 
-        #browseBy{
-            border: 3px solid rgb(227, 27, 60);
+        #price{
+            color:#555 
         }
 
         *{
@@ -38,7 +45,7 @@
         position: relative;
        }
         #complete{
-            border: 1px solid red;
+            /* border: 1px solid red; */
             width:90%;
             margin: auto;
             margin-top: 10px;
@@ -51,7 +58,7 @@
             margin-top: 10px;
         }
         #top>div{
-            border:1px solid green;
+            /* border:1px solid green; */
             width:15%;
             height:60px;
             text-align: center;
@@ -65,14 +72,14 @@
 
 
         #sortBox{
-            border: 3px solid green;
+            /* border: 3px solid green; */
             /* margin-left: 300px; */
             margin-top: 20px;
             display: flex;
     
         }
         #sortBox>div:nth-child(1){
-            border: 2px solid blue;
+            /* border: 2px solid blue; */
             display: flex;
             width:400px;
             /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
@@ -87,7 +94,7 @@
         }
         #sortBox>div:last-child{
             display: flex;
-            border: 2px solid green;
+            /* border: 2px solid green; */
             width:200px;
             margin-left: 200px;
             margin-top: 12px;
@@ -108,11 +115,11 @@
         /* card div starts */
 
         #cardDiv{
-            border: 3px solid violet;
+            /* border: 3px solid violet; */
             /* margin-left: 300px; */
             margin-top: 20px;
             display: grid;
-            grid-template-columns: repeat(4,1fr);
+            grid-template-columns: repeat(3,1fr);
             gap: 15px;
         }
         /* #images>div{
@@ -120,27 +127,28 @@
         } */
         #cardDiv>div {
             overflow: hidden;
-            height: 405px;
+            /* width: 388px; */
+             /* height: 405px;  */
         }
         #cardDiv>div>img{
             width:100%;
-            height:300px;
+            /* height:550px; */
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             transition-duration: 2s;
         }
-        #images>div>p{
+        #cardDiv>div>p{
             margin-top: 10px;
         }
-        #images>div>p+p{
+        #cardDiv>div>p+p{
             color:#555;
             margin-top: 5px;
             font-size: 15px;
         
         }
-        #images>div:hover img{
+        #cardDiv>div:hover img{
             transform: scale(1.1);
         }
-        img+p{
+        p{
             font-family: Arial, Helvetica, sans-serif;
         }
         #top>div:nth-child(1){
@@ -174,7 +182,7 @@
          margin-top: 7px;
         }
         #box{
-            border: 3px solid gold;
+            /* border: 3px solid gold; */
             margin-left: 0px;
             width:1400px
             
@@ -193,7 +201,7 @@
         }
         #cardDiv>div{
             position: relative;
-            height: 410px;
+            
         }
         #upper>div:first-child{
             /* border: 1px solid green; */
@@ -231,7 +239,7 @@
         }
         #sec1{
          margin-top: 20px;
-         border: 1px solid red;
+         /* border: 1px solid red; */
          width:100px;
          padding-right: 20px;
          
@@ -263,17 +271,24 @@
             border-radius: 50%;
             margin-right: 5px;
            }
-           .coloursForPic{
+           #coloursForPic{
             position: absolute;
-            bottom: 0px;
+            /* bottom: 0px; */
+            height: 10px;
+            width: 5px;
             
            }
-           .coloursForPic>button{
-            border:0.5px solid #555;
+           #colorPic{
+            display: block;
+            height: 10px;
+            width: 10px;
            }
+           /* .coloursForPic>button{
+            border:0.5px solid #555;
+           } */
         @media all and (min-width:784px) and (max-width:1074px){
         #cardDiv{
-            grid-template-columns: repeat(3,1fr);
+            grid-template-columns: repeat(2,1fr);
             /* width:100%; */
             gap:10px;
         }
@@ -292,8 +307,8 @@
     }
     @media all and (min-width:200px) and (max-width:783px){
         #cardDiv{
-            grid-template-columns: repeat(2,1fr);
-            grid-template-rows: repeat(10,420px);
+            grid-template-columns: repeat(1,1fr);
+            /* grid-template-rows: repeat(10,420px); */
             /* width:100%; */
             gap:10px;
         }
@@ -322,6 +337,56 @@
     
     }
 
+    /* #card{
+        border: 1px solid blue;
+        
+        
+    } */
+
+    #card > button{
+        /* display: block; */
+        border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  
+    }
+
+    #priceDiv{
+        display: flex;
+        margin-top: 7px;
+        margin-bottom: 7px;
+        justify-content: space-between
+        
+    }
+
+    #colorDiv{
+    /* border: 1px solid red; */
+    width: 25px;
+    height: 20px;
+    border-radius: 15px;
+    margin-right: 30px;
+    }
+
+    #colorPic{
+        width: 100%;
+        height: 100%;
+    
+  border-radius: 50%;
+
+    }
+
+    #title{
+        margin-top: 15px;
+    }
+
+    
+
     /* #cardDiv{
         display: grid;
         grid-template-columns: repeat(3,1fr);
@@ -345,11 +410,11 @@
             <h3>Browse by:</h3>
             <hr>
             <a href="index.html">Home</a>
-            <a href="shoes.html">shoes</a>
-            <a href="beauty1.html">Beauty & Wellness</a>
-            <a href="">Homes and furniture</a>
-            <a href="">Weddings</a>
-            <a href="sale.html">Sale</a>
+            <a href=>shoes</a>
+            <a href=>Beauty & Wellness</a>
+            <a href=>Homes and furniture</a>
+            <a href=>Weddings</a>
+            <a href=>Sale</a>
             <a href="">Garden & outdoor</a>
             <h3>Filter by:</h3>
             <hr>
@@ -359,7 +424,7 @@
             <hr>
             <h2>Color +</h2>
             <hr>
-            <h2>Brand +</h2>
+            <h2 id="Brand">Brand +</h2>
             <hr>
             <h2>Free pickup +</h2>
             <hr>
@@ -383,7 +448,7 @@
                     <option value="za">Z-A</option>
                 </select>
                 <!-- <button class="btn-btn"><a class="cloth"href=""><</a></button> -->
-                <button id="btn-btn"><a id="cloth" href="shoes.html">2</a></button>
+                <!-- <button id="btn-btn"><a id="cloth" href="shoes.html">2</a></button> -->
             </div>
         </div>
         <div id="cardDiv">
@@ -400,7 +465,7 @@
 
 let container = document.getElementById("cardDiv")
 
-
+let fetchedData = [];
    
 const url = `https://fashionhub-mrc2.onrender.com/AllProducts`
 
@@ -410,6 +475,7 @@ fetch(url)
 })
 .then((actualData)=>{
     console.log(actualData)
+    fetchedData = actualData;
     displayData(actualData)
     
 })
@@ -419,6 +485,89 @@ fetch(url)
     })
 
 
+//  sort code starts here 
+
+document.querySelector("#sort").addEventListener("change", on1)
+ function on1(){
+    let select=document.querySelector("#sort").value
+    
+
+    if(select=="lowhigh"){
+        fetchedData.sort(function(a,b){
+        
+            return a.price-b.price
+        })
+        displayData(fetchedData);
+    }else if(select=="highlow"){
+        fetchedData.sort(function(a,b){
+            return b.price-a.price
+        })
+        displayData(fetchedData);
+    }
+else if(select=="az"){
+        fetchedData.sort(function(a,b){
+    if(a.Brand>b.Brand) return 1
+    if(a.Brand<b.Brand) return -1
+    else return 0
+         })
+         displayData(fetchedData);
+        }else if(select=="za"){
+        fetchedData.sort(function(a,b){
+    if(a.Brand<b.Brand) return 1
+    if(a.Brand>b.Brand) return -1
+    else return 0
+         })
+         displayData(fetchedData)
+    }else if(select=="shl"){
+        fetchedData.sort(function(a,b){
+            if(a.size<b.size) return 1
+            if(a.size>b.size) return -1
+            else return 0
+        })
+        displayData(fetchedData)
+    }else if(select=="slh"){
+        fetchedData.sort(function(a,b){
+            if(a.size>b.size) return 1
+            if(a.size<b.size) return -1
+            else return 0
+        })
+        displayData(fetchedData)
+    }else if(select=="Newest"){
+        output=fetchedData.filter(function(el){
+            return(el.rating < 4)
+        })
+        displayData(output)
+    }else if(select=="Bestselling"){
+        output=fetchedData.filter(function(el){
+            return(el.rating > 4)
+        })
+        displayData(output)
+    }else if(select=="Featured"){
+        window.location.reload()
+    }
+
+    // window.location.reload()
+
+}
+
+document.querySelector("#price").addEventListener("click", pri)
+ function pri(){
+    fetchedData.sort(function(a,b){
+        return a.price-b.price
+    })
+    displayData(fetchedData)
+ }
+ document.querySelector("#Brand").addEventListener("click", brand)
+ function brand(){
+    fetchedData.filter(function(a,b){
+        return a.size-b.size
+    })
+    displayData(fetchedData)
+ }
+// sort code ends here
+
+
+
     function displayData(data){
       container.innerHTML=null;
      data.forEach((element)=>{
@@ -426,21 +575,32 @@ fetch(url)
       
 
       let card = document.createElement("div");
+      card.id="card"
        
       let image =document.createElement("img")
       image.setAttribute("src",element.image_1);
 
-    //   let colorImg = document.createElement("img");
-    //   colorImg.setAttribute("src",element.Color_image);
+      let colorImg = document.createElement("img");
+      colorImg.setAttribute("src",element.Color_image);
+    colorImg.id="colorPic";
 
-      let brand = document.createElement("p");
-      brand.innerText= element.Brand;
+      let title = document.createElement("p");
+      title.innerText= element.title;
+      title.id="title"
 
-    //   let category = document.createElement("p");
-    //   category.innerText=element.category;
+      let rating = document.createElement("p");
+      rating.innerText=element.rating;
+
+      let priceDiv= document.createElement("div")
+      priceDiv.id="priceDiv"
 
       let price = document.createElement("p");
-      price.innerText=element.price;
+      price.innerText=`$ ${element.price}`;
+      price.id="price"
+
+      let colorDiv = document.createElement("div")
+      colorDiv.id="colorDiv"
+
 
       let button = document.createElement("button");
       button.innerText= "Add To Cart"
@@ -463,14 +623,15 @@ fetch(url)
         if (isPresent===true){
           alert("Product already in the cart");
         }else{
-          cartData.push(element);
+          cartData.push({...element,Quantity:1});
           localStorage.setItem("cart",JSON.stringify(cartData));
-          console.log(cartData)
           alert("Product added to The cart");
         }
       })
-
-      card.append(image, brand,price,button);
+      
+      colorDiv.append(colorImg)
+      priceDiv.append(price, colorDiv)
+      card.append(image, title,priceDiv,button);
       container.append(card)
 
 

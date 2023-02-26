@@ -105,8 +105,24 @@
 		let cartData = JSON.parse(localStorage.getItem("cart")) || [];
 
 		
-		// localStorage.setItem("customer",JSON.stringify(shippingData))
-		// localStorage.setItem("cart",JSON.stringify(cartData))
+		// cartData=[...cartData,...shippingData]
+
+		//console.log(cartData)
+		shippingData.map((Element)=>{
+			fetch(`https://fashionhub-mrc2.onrender.com/Orders`,{
+			method: "POST",
+			headers: {
+               "Content-Type": "application/json",
+            },
+			body: JSON.stringify(Element),
+		}).then((res)=> res.json()).then((data)=> console.log(data))
+
+		})
+		
+
+
+
+
 
 		
 
@@ -120,7 +136,7 @@
 		PayAlert.innerText=null
 		PAlert2.innerText="Loading..."
 		setTimeout(()=>{
-			window.location.href = "done.html";
+			//window.location.href = "done.html";
 		},2000)
 
 		

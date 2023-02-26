@@ -238,11 +238,16 @@ else if(form.State.value==""){
 	Alert.innerText="Please fill the State Name"
 }
 else{
-
+     let year=new Date().getFullYear()
+	 console.log(year)
+	 let month=new Date().getMonth()+1
+	 console.log(month)
+	 let Day=new Date().getDate()
+	 console.log(Day)
 	let shippingData=[]
-   form.addEventListener("submit", (e)=>{
-	let shippingData = JSON.parse(localStorage.getItem("customer")) || [];
-	e.preventDefault()
+//    form.addEventListener("submit", (e)=>{
+	 shippingData = JSON.parse(localStorage.getItem("customer")) || [];
+	// e.preventDefault()
 	let obj={
 		first_name:form.fname.value,
 	    last_name:form.lname.value,
@@ -250,14 +255,16 @@ else{
 		mobile:form.mble.value,
 		city:form.city.value,
 		zip:form.zipcode.value,
-		state:form.State.value
+		state:form.State.value,
+		orderNumber:Math.floor(Math.random() * 1000000),
+		Date:Day+"/"+month+"/"+year
 	}
 	shippingData.push(obj)
-	console.log(shippingData)
+	//console.log(shippingData)
 	
 	localStorage.setItem("customer",JSON.stringify(shippingData))
 
-    })
+    // })
 
 	Alert.innerText=null
 	Alert2.innerText="Loading..."
