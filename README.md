@@ -1,6 +1,9 @@
 # FashonHub
 Cloning of Anthropologie
 Its a web application that provides a platform to buy fashion clothes products.It a user friendly E Commerce Website.
+
+![Black_and_Gold_Classy_Minimalist_Circular_Name_Logo-removebg-preview](https://user-images.githubusercontent.com/118505620/221519807-fc69bf70-2cd1-4809-898b-51474a382634.png)
+
 [website Url--](https://legendary-monstera-f8fb81.netlify.app/)
 ## Tech Stack
 **Client:** Html ,Css
