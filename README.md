@@ -1,7 +1,7 @@
 # indigo-expert-8695
 Cloning of Anthropologie
 Its a web application that provides a platform to buy fashion clothes products.It a user friendly E Commerce Website.
-[website Url--](/)
+[website Url--](https://legendary-monstera-f8fb81.netlify.app/)
 ## Tech Stack
 **Client:** Html ,Css
 **Client Server Api:** Local Storage,Json Server.
