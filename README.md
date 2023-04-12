@@ -1,4 +1,4 @@
-# FashonHub
+# FashionHub
 Cloning of Anthropologie
 Its a web application that provides a platform to buy fashion clothes products.It a user friendly E Commerce Website.
 
