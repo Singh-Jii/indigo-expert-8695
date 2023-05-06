@@ -5,7 +5,7 @@ Its a web application that provides a platform to buy fashion clothes products.I
 ![image](https://user-images.githubusercontent.com/118505620/221520169-22cb8c53-0fdd-4e8b-a018-80c4ab3ee5e9.png)
 
 
-[website Url--](https://legendary-monstera-f8fb81.netlify.app/)
+[website Url--](https://eclectic-jelly-7ae5cd.netlify.app/)
 ## Tech Stack
 **Client:** Html ,Css
 **Client Server Api:** Local Storage,Json Server.
