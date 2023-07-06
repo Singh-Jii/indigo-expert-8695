@@ -12,8 +12,12 @@ Its a web application that provides a platform to buy fashion clothes products.I
 ## 🛠 Skills
 Javascript, HTML, CSS...
 
+
+
 ##Admin page login 
+
  "email": "admin@gmail.com",
+ 
 "password": "Admin@1212"
 
 ## Run Locally
