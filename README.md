@@ -41,7 +41,7 @@ Start the server
 ## Support
 For support, email -gentalman1945@gmail.com 
 
-For Go to the website click the link:-https://legendary-monstera-f8fb81.netlify.app/
+For Go to the website click the link:-[https://legendary-monstera-f8fb81.netlify.app/](https://eclectic-jelly-7ae5cd.netlify.app/)
 
 GitHub Link:-https://github.com/Singh-Jii/indigo-expert-8695
 ## Screenshots
