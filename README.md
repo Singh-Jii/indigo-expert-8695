@@ -13,6 +13,7 @@ Its a web application that provides a platform to buy fashion clothes products.I
 Javascript, HTML, CSS...
 
 
+![admin](https://github.com/Singh-Jii/indigo-expert-8695/assets/39863817/72a30ded-b327-4c69-ae4d-cb2c69c51046)
 
 ##Admin page login 
 
