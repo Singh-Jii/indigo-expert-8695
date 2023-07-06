@@ -11,6 +11,7 @@ Its a web application that provides a platform to buy fashion clothes products.I
 **Client Server Api:** Local Storage,Json Server.
 ## 🛠 Skills
 Javascript, HTML, CSS...
+
 ##Admin page login 
  "email": "admin@gmail.com",
 "password": "Admin@1212"
